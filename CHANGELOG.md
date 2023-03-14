@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Example to display frames
+- Example: display frames from the URDF description
 - Function to load the description directly in Pinocchio
 
 ### Fixed
