@@ -2,14 +2,26 @@
 
 <img src="https://user-images.githubusercontent.com/1189580/169594012-2d685579-2b66-4470-9def-57bd0656b420.png" align="right" width="300">
 
-URDF description for the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped. See also:
+URDF description for the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped. 
+
+## Python module
+
+The description can be loaded directly in various Python robotics frameworks, for instance:
+
+```python
+import upkie_description
+
+robot = upkie_description.load_in_pinocchio()
+```
+
+Check out the [Python README](dist/python/README.md) for more details.
+
+## See also
 
 - [3D printed parts](https://www.printables.com/model/127831-upkie-wheeled-biped-robot)
 - [Locomotion code](https://github.com/tasts-robots/upkie_locomotion)
 - [Project log](https://hackaday.io/project/185729/logs)
 
-Upkie's torso derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
-
 ## License
 
-The Apache 2.0 license applies to all files in this repository, to the exception of the [wheel\_tire](meshes/wheel_tire) mesh which is under the CC BY 4.0 license. Meshes from [mjbots](meshes/mjbots) are also Apache 2.0. See the files in their respective folders for more details.
+Upkie's torso derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad). The Apache 2.0 license applies to all files in this repository, to the exception of the [wheel\_tire](meshes/wheel_tire) mesh which is under the CC BY 4.0 license. Meshes from [mjbots](meshes/mjbots) are also Apache 2.0. See the files in their respective folders for more details.
