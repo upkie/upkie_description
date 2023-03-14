@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2023/03/14
+
+### Added
+
+- Function to load the description directly in Pinocchio
+
+### Fixed
+
+- Orientation of the IMU frame (thanks to @G-Levine)
+
 ## [1.1.1] - 2023/02/13
 
 ### Changed
