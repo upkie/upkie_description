@@ -28,9 +28,9 @@ if [ "$#" -lt 1 ]; then
 fi
 
 SCRIPT=$(realpath "$0")
-BASEDIR=$(dirname "${SCRIPT}")
+SCRIPTDIR=$(dirname "${SCRIPT}")
 COMMAND=$@
-SRCDIR=${BASEDIR}/../..
+SRCDIR=${SCRIPTDIR}/../..
 TMPDIR=$(mktemp -d)
 
 echo "[debug] COMMAND=${COMMAND}"
@@ -42,8 +42,8 @@ for folder in meshes urdf; do
     cp -r ${SRCDIR}/${folder} ${TMPDIR}/${PROJECT_NAME}/${folder}
 done
 
-cp ${BASEDIR}/${PROJECT_NAME}/*.py ${TMPDIR}/${PROJECT_NAME}/
-cp ${BASEDIR}/README.md ${TMPDIR}/README.md
-cp ${BASEDIR}/pyproject.toml ${TMPDIR}/pyproject.toml
+cp ${SCRIPTDIR}/${PROJECT_NAME}/*.py ${TMPDIR}/${PROJECT_NAME}/
+cp ${SCRIPTDIR}/README.md ${TMPDIR}/README.md
+cp ${SCRIPTDIR}/pyproject.toml ${TMPDIR}/pyproject.toml
 
 cd ${TMPDIR} && flit ${COMMAND}
