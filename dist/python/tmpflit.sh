@@ -27,7 +27,8 @@ if [ "$#" -lt 1 ]; then
     exit 1
 fi
 
-BASEDIR=$(dirname 0)
+SCRIPT=$(realpath "$0")
+BASEDIR=$(dirname "${SCRIPT}")
 COMMAND=$@
 SRCDIR=${BASEDIR}/../..
 TMPDIR=$(mktemp -d)
