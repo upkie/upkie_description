@@ -63,7 +63,7 @@ if __name__ == "__main__":
         meshcat_shapes.frame(
             handle["frame"],
             axis_length=0.05 * args.frame_scale,
-            axis_thickness=0.001 * args.frame_scale,
+            axis_thickness=0.002 * args.frame_scale,
             opacity=0.8,
             origin_radius=0.005,
         )
