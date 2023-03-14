@@ -20,7 +20,13 @@ This module helps retrieve Upkie's model from a Python program. Import it by:
 import upkie_description
 ```
 
-It then provides the following paths:
+You can then load the description directly in a robotics framework, for instance in Pinocchio:
+
+```python
+robot = upkie_description.load_in_pinocchio()
+```
+
+The ``upkie_description`` module also provides the following paths:
 
 <dl>
     <dt>
