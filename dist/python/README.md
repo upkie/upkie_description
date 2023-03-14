@@ -4,11 +4,15 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/upkie_description)](https://pypi.org/project/upkie_description/)
 
-:warning: **This module has been deprecated in favor of [`robot_descriptions`](https://github.com/robot-descriptions/robot_descriptions.py).**
-
 URDF description for the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped. 
 
-## Python module
+## Installation
+
+```
+pip install upkie_description
+```
+
+## Usage
 
 This module helps retrieve Upkie's model from a Python program. Import it by:
 
