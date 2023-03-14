@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Example to display frames
 - Function to load the description directly in Pinocchio
 
 ### Fixed
