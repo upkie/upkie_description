@@ -19,20 +19,13 @@
 URDF description for the Upkie wheeled biped.
 """
 
-import os
+from .load_in_pinocchio import load_in_pinocchio
+from .paths import meshes_path, path, urdf_path
 
-__version__ = "1.1.1"
-
-# Path to upkie_description
-path = os.path.dirname(os.path.realpath(__file__))
-
-# Path to the meshes folder
-meshes_path = os.path.join(path, "meshes")
-
-# Path to the robot's URDF
-urdf_path = os.path.join(path, "urdf", "upkie.urdf")
+__version__ = "1.2.0rc0"
 
 __all__ = [
+    "load_in_pinocchio",
     "meshes_path",
     "path",
     "urdf_path",
