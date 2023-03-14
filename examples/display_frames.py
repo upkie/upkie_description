@@ -50,7 +50,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     robot = upkie_description.load_in_pinocchio()
-
     robot.setVisualizer(MeshcatVisualizer())
     robot.initViewer(open=True)
     robot.loadViewerModel(color=[1.0, 1.0, 1.0, 0.3])
