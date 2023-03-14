@@ -42,19 +42,14 @@ PinocchioJoint = Union[
 
 
 def load_in_pinocchio(
-    description_name: str,
     root_joint: Optional[PinocchioJoint] = None,
-    commit: Optional[str] = None,
 ) -> pin.RobotWrapper:
-    """Load a robot description in Pinocchio.
+    """Load Upkie's description in Pinocchio.
 
     Args:
-        description_name: Name of the robot description.
         root_joint (optional): First joint of the kinematic chain, for example
             a free flyer between the floating base of a mobile robot and an
             inertial frame. Defaults to no joint, i.e., a fixed base.
-        commit: If specified, check out that commit from the cloned robot
-            description repository.
 
     Returns:
         Robot model for Pinocchio.
