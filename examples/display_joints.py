@@ -16,7 +16,7 @@
 # limitations under the License.
 
 """
-Display all frames from the robot description.
+Display joint frames from the robot description.
 
 This example relies on the following dependencies:
 
@@ -30,6 +30,7 @@ import time
 
 import meshcat_shapes
 import numpy as np
+import pinocchio as pin
 import upkie_description
 from meshcat import transformations
 from pinocchio.visualize import MeshcatVisualizer
@@ -55,10 +56,17 @@ if __name__ == "__main__":
     robot.display(robot.q0)
     viewer = robot.viz.viewer
 
-    for frame in robot.model.frames:
-        if frame.name == "universe" or (args.only and frame.name != args.only):
-            continue
-        handle = viewer["pinocchio"]["visuals"][f"{frame.name}_0"]
+    model = robot.model
+    data = robot.data
+    q = pin.neutral(model)
+    pin.forwardKinematics(model, data, q)
+
+    for index, name in enumerate(model.names):
+        joint_id = model.getJointId(name)
+        joint = model.joints[joint_id]
+        joint_placement = model.jointPlacements[joint_id]
+        handle = viewer["pinocchio"]["joints"][name]
+        handle.set_transform(data.oMi[joint_id].np)
         meshcat_shapes.frame(
             handle["frame"],
             axis_length=0.05 * args.frame_scale,
@@ -68,10 +76,10 @@ if __name__ == "__main__":
         )
         meshcat_shapes.textarea(
             handle["text"],
-            text=frame.name,
+            text=name,
             width=0.05,
             height=0.05,
-            font_size=100,
+            font_size=150,
         )
         Rx = transformations.rotation_matrix(0.5 * np.pi, [1.0, 0.0, 0.0])
         Rz = transformations.rotation_matrix(0.5 * np.pi, [0.0, 0.0, 1.0])
