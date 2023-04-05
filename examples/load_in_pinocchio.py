@@ -20,6 +20,7 @@
 import upkie_description
 
 if __name__ == "__main__":
+    print("Loading robot in Pinocchio...")
     robot = upkie_description.load_in_pinocchio()
-    print(f"Robot loaded in {robot=}")
+    print(f"{robot=}")
     print("Run this example with ``python -i`` to interact with it")
