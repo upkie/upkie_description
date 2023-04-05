@@ -7,6 +7,11 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Example: display joint frames from the URDF description
+- Example: load Upkie in Pinocchio
+
+### Changed
+
+- Update velocity limits to more reasonable values
 
 ## [1.2.0] - 2023/03/14
 
