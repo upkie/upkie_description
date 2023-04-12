@@ -576,7 +576,7 @@ And in case of doubt:
         <child link="left_ankle_mj5208_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit velocity="100.0" effort="1.0"/>
+        <limit velocity="50.26548245743669" effort="1.0"/>
     </joint>
 
     <!-- Left wheel -->
@@ -1056,7 +1056,7 @@ And in case of doubt:
         <child link="right_ankle_mj5208_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit velocity="100.0" effort="1.0"/>
+        <limit velocity="50.26548245743669" effort="1.0"/>
     </joint>
 
     <!-- Right wheel -->
