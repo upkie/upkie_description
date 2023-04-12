@@ -390,7 +390,7 @@ And in case of doubt:
         <child link="left_knee_qdd100_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0.0292"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit lower="-2.5132741228718345" upper="2.5132741228718345" velocity="12.0" effort="10.0"/>
+        <limit lower="-2.5132741228718345" upper="2.5132741228718345" velocity="12.566370614359172" effort="10.0"/>
     </joint>
 
     <link name="left_knee_qdd100_rotor">
@@ -870,7 +870,7 @@ And in case of doubt:
         <child link="right_knee_qdd100_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0.0292"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit lower="-2.5132741228718345" upper="2.5132741228718345" velocity="12.0" effort="10.0"/>
+        <limit lower="-2.5132741228718345" upper="2.5132741228718345" velocity="12.566370614359172" effort="10.0"/>
     </joint>
 
     <link name="right_knee_qdd100_rotor">
