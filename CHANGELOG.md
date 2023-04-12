@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- Summary of joint limits in the README
+
+### Changed
+
+- Hip position and velocity limits
+- Knee position and velocity limits
+- Wheel velocity limits
+
 ## [1.3.0] - 2023/04/05
 
 ### Added
