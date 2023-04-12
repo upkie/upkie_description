@@ -16,6 +16,20 @@ robot = upkie_description.load_in_pinocchio()
 
 Check out the [Python README](dist/python/README.md) for more details.
 
+## Joint limits
+
+| Joint | Limit    | Value (±) | Unit |
+|-------|----------|-----------|------|
+| Hip   | Position | 0.2       | rev  |
+| Hip   | Velocity | 2         | rps  |
+| Hip   | Torque   | 10        | Nm   |
+| Knee  | Position | 0.4       | rev  |
+| Knee  | Velocity | 2         | rps  |
+| Knee  | Torque   | 10        | Nm   |
+| Wheel | Position | -         | -    |
+| Wheel | Velocity | 8         | rps  |
+| Wheel | Torque   | 1         | Nm   |
+
 ## See also
 
 - [3D printed parts](https://www.printables.com/model/127831-upkie-wheeled-biped-robot)
