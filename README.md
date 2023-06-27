@@ -32,9 +32,9 @@ Check out the [Python README](dist/python/README.md) for more details.
 
 ## See also
 
-- [3D printed parts](https://www.printables.com/model/127831-upkie-wheeled-biped-robot)
-- [Locomotion code](https://github.com/tasts-robots/upkie_locomotion)
-- [Project log](https://hackaday.io/project/185729/logs)
+- [3D printed parts](https://github.com/tasts-robots/upkie_parts)
+- [Locomotion software](https://github.com/tasts-robots/upkie)
+- [Project page on Hackaday.io](https://hackaday.io/project/185729/logs)
 
 ## License
 
