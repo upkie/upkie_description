@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Hip position and velocity limits
+- IMU orientation to be consistent with assembly instructions
 - Knee position and velocity limits
 - Wheel velocity limits
 
