@@ -33,8 +33,7 @@ Check out the [Python README](dist/python/README.md) for more details.
 ## See also
 
 - [3D printed parts](https://github.com/tasts-robots/upkie_parts)
-- [Locomotion software](https://github.com/tasts-robots/upkie)
-- [Project page on Hackaday.io](https://hackaday.io/project/185729/logs)
+- [Upkie's software](https://github.com/tasts-robots/upkie)
 
 ## License
 
