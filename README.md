@@ -18,17 +18,17 @@ Check out the [Python README](dist/python/README.md) for more details.
 
 ## Joint limits
 
-| Joint | Limit    | Value (±) | Unit |
-|-------|----------|-----------|------|
-| Hip   | Position | 0.2       | rev  |
-| Hip   | Velocity | 2         | rps  |
-| Hip   | Torque   | 10        | Nm   |
-| Knee  | Position | 0.4       | rev  |
-| Knee  | Velocity | 2         | rps  |
-| Knee  | Torque   | 10        | Nm   |
-| Wheel | Position | -         | -    |
-| Wheel | Velocity | 8         | rps  |
-| Wheel | Torque   | 1         | Nm   |
+| Joint | Limit    | Value (±) | Unit | Why? |
+|-------|----------|-----------|------|------|
+| Hip   | Position | 0.2       | rev  | Cables fully stretched |
+| Hip   | Velocity | 2         | rps  | Conservative, maximum rated velocity would be around 6 rps |
+| Hip   | Torque   | 10        | Nm   | From the [qdd100 spec](https://mjbots.com/products/qdd100-beta-3) |
+| Knee  | Position | 0.4       | rev  | Wheels touching hip actuators. |
+| Knee  | Velocity | 2         | rps  | Conservative, maximum rated velocity would be around 6 rps |
+| Knee  | Torque   | 10        | Nm   | From the [qdd100 spec](https://mjbots.com/products/qdd100-beta-3) |
+| Wheel | Position | -         | -    | - |
+| Wheel | Velocity | 8         | rps  | Conservative, maximum rated velocity [is 125 rps](https://mjbots.com/products/mj5208) |
+| Wheel | Torque   | 1         | Nm   | Conservative, 60% of [peak torque](https://mjbots.com/products/mj5208) |
 
 ## See also
 
