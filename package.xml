@@ -6,6 +6,6 @@
   <author>Stéphane Caron</author>
   <maintainer email="stephane.caron@normalesup.org">Stéphane Caron</maintainer>
   <license>Apache 2.0</license>
-  <url>https://github.com/tasts-robots/upkie_description</url>
+  <url>https://github.com/upkie/upkie_description</url>
   <buildtool_depend>catkin</buildtool_depend>
 </package>

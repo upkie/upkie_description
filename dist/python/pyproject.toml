@@ -31,9 +31,9 @@ dependencies = [
 ]
 
 [project.urls]
-Source = "https://github.com/tasts-robots/upkie_description"
-Tracker = "https://github.com/tasts-robots/upkie_description/issues"
-Changelog = "https://github.com/tasts-robots/upkie_description/blob/master/CHANGELOG.md"
+Source = "https://github.com/upkie/upkie_description"
+Tracker = "https://github.com/upkie/upkie_description/issues"
+Changelog = "https://github.com/upkie/upkie_description/blob/master/CHANGELOG.md"
 
 [tool.black]
 line-length = 79

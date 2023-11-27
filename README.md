@@ -32,8 +32,8 @@ Check out the [Python README](dist/python/README.md) for more details.
 
 ## See also
 
-- [3D printed parts](https://github.com/tasts-robots/upkie_parts)
-- [Upkie's software](https://github.com/tasts-robots/upkie)
+- [3D printed parts](https://github.com/upkie/upkie_parts)
+- [Upkie's software](https://github.com/upkie/upkie)
 
 ## License
 
