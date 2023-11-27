@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.4.0] - 2023/07/19
+## [Unreleased]
+
+### Changed
+
+- Update projet links
+
+## [1.4.0] - 2023-07-19
 
 ### Added
 
@@ -15,7 +21,7 @@ All notable changes to this project will be documented in this file.
 - Knee position and velocity limits
 - Wheel velocity limits
 
-## [1.3.0] - 2023/04/05
+## [1.3.0] - 2023-04-05
 
 ### Added
 
@@ -26,7 +32,7 @@ All notable changes to this project will be documented in this file.
 
 - Update velocity limits to more reasonable values
 
-## [1.2.0] - 2023/03/14
+## [1.2.0] - 2023-03-14
 
 ### Added
 
@@ -37,13 +43,13 @@ All notable changes to this project will be documented in this file.
 
 - Orientation of the IMU frame (thanks to @G-Levine)
 
-## [1.1.1] - 2023/02/13
+## [1.1.1] - 2023-02-13
 
 ### Changed
 
 - Rename "chassis" to "torso"
 
-## [1.1.0] - 2022/05/23
+## [1.1.0] - 2022-05-23
 
 ### Added
 
@@ -63,7 +69,7 @@ All notable changes to this project will be documented in this file.
 - Links to Printables.com
 - Project name for CMake
 
-## [1.0.0] - 2022/03/17
+## [1.0.0] - 2022-03-17
 
 Initial robot description.
 
