@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.5.0] - 2024-02-20
+
 ### Changed
 
 - Shorten source headers using SPDX license identifiers
@@ -85,7 +87,8 @@ Initial robot description.
 - Robot description (kinematics, inertias, collisions) in URDF
 - Scripts to compute box and cylinder inertias
 
-[unreleased]: https://github.com/upkie/upkie_description/compare/v1.4.0...HEAD
+[unreleased]: https://github.com/upkie/upkie_description/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/upkie/upkie_description/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/upkie/upkie_description/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/upkie/upkie_description/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/upkie/upkie_description/compare/v1.1.1...v1.2.0
