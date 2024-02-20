@@ -9,7 +9,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Shorten source headers using SPDX license identifiers
-- Update projet links
+- Update project links
 
 ### Fixed
 

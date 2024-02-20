@@ -14,7 +14,7 @@ import upkie_description
 robot = upkie_description.load_in_pinocchio()
 ```
 
-Check out the [Python README](dist/python/README.md) for more details.
+Check out the [Python readme](dist/python/README.md) for more details.
 
 ## Joint limits
 
@@ -32,8 +32,8 @@ Check out the [Python README](dist/python/README.md) for more details.
 
 ## See also
 
-- [3D printed parts](https://github.com/upkie/upkie_parts)
-- [Upkie's software](https://github.com/upkie/upkie)
+- [Upkie](https://github.com/upkie/upkie): main repository for the robot's hardware and software
+- [3D printed parts](https://github.com/upkie/parts): CAD files and add-ons for the robot
 
 ## License
 
