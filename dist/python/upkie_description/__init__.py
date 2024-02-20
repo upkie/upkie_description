@@ -9,14 +9,19 @@
 URDF description for the Upkie wheeled biped.
 """
 
-from .load_in_pinocchio import load_in_pinocchio
 from .paths import meshes_path, path, urdf_path
 
-__version__ = "1.4.0"
+__version__ = "1.5.0"
 
 __all__ = [
-    "load_in_pinocchio",
     "meshes_path",
     "path",
     "urdf_path",
 ]
+
+try:
+    from .load_in_pinocchio import load_in_pinocchio  # noqa
+
+    __all__.append("load_in_pinocchio")
+except ImportError:
+    pass
