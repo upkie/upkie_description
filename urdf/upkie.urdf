@@ -236,7 +236,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="left_hip_qdd100_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0.0292"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit lower="-1.2566370614359172" upper="1.2566370614359172" velocity="12.566370614359172" effort="10.0"/>
+        <limit lower="-1.26" upper="1.26" velocity="28.8" effort="16.0"/>
     </joint>
 
     <link name="left_hip_horn">
@@ -355,7 +355,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="left_knee_qdd100_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0.0292"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit lower="-2.5132741228718345" upper="2.5132741228718345" velocity="12.566370614359172" effort="10.0"/>
+        <limit lower="-2.51" upper="2.51" velocity="28.8" effort="16.0"/>
     </joint>
 
     <link name="left_knee_qdd100_rotor">
@@ -569,7 +569,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="left_ankle_mj5208_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit velocity="50.26548245743669" effort="1.0"/>
+        <limit velocity="785.4" effort="1.7"/>
     </joint>
 
     <!-- Left wheel -->
@@ -744,7 +744,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="right_hip_qdd100_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0.0292"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit lower="-1.2566370614359172" upper="1.2566370614359172" velocity="12.566370614359172" effort="10.0"/>
+        <limit lower="-1.26" upper="1.26" velocity="28.8" effort="16.0"/>
     </joint>
 
     <link name="right_hip_horn">
@@ -863,7 +863,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="right_knee_qdd100_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0.0292"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit lower="-2.5132741228718345" upper="2.5132741228718345" velocity="12.566370614359172" effort="10.0"/>
+        <limit lower="-2.51" upper="2.51" velocity="28.8" effort="16.0"/>
     </joint>
 
     <link name="right_knee_qdd100_rotor">
@@ -1077,7 +1077,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="right_ankle_mj5208_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit velocity="50.26548245743669" effort="1.0"/>
+        <limit velocity="785.4" effort="1.7"/>
     </joint>
 
     <!-- Right wheel -->
