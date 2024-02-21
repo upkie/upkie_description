@@ -23,17 +23,21 @@ Check out the [Python readme](dist/python/README.md) for more details.
 
 ## Joint limits
 
-| Joint | Limit    | Value (±) | Unit | Why? |
-|-------|----------|-----------|------|------|
-| Hip   | Position | 0.2       | rev  | Cables fully stretched |
-| Hip   | Velocity | 2         | rps  | Conservative, maximum rated velocity would be around 6 rps |
-| Hip   | Torque   | 10        | Nm   | From the [qdd100 spec](https://mjbots.com/products/qdd100-beta-3) |
-| Knee  | Position | 0.4       | rev  | Wheels touching hip actuators. |
-| Knee  | Velocity | 2         | rps  | Conservative, maximum rated velocity would be around 6 rps |
-| Knee  | Torque   | 10        | Nm   | From the [qdd100 spec](https://mjbots.com/products/qdd100-beta-3) |
-| Wheel | Position | -         | -    | - |
-| Wheel | Velocity | 8         | rps  | Conservative, maximum rated velocity [is 125 rps](https://mjbots.com/products/mj5208) |
-| Wheel | Torque   | 1         | Nm   | Conservative, 60% of [peak torque](https://mjbots.com/products/mj5208) |
+| Joint | Limit    | Value (±) | Unit  | Why? |
+|-------|----------|-----------|-------|------|
+| Hip   | Position | 1.26      | rad   | Geometry: cables fully stretched |
+| Hip   | Velocity | 28.8      | rad/s | Derived from the [qdd100 spec](https://mjbots.com/products/qdd100-beta-3), see [below](#maximum-velocity-for-a-qdd100-at-18v) |
+| Hip   | Torque   | 16.0      | Nm    | Peak torque (< 1 s) from the [qdd100 spec](https://mjbots.com/products/qdd100-beta-3) |
+| Knee  | Position | 2.51      | rad   | Geometry: wheels touching hip actuators. |
+| Knee  | Velocity | 28.8      | rad/s | Derived from the [qdd100 spec](https://mjbots.com/products/qdd100-beta-3), see [below](#maximum-velocity-for-a-qdd100-at-18v) |
+| Knee  | Torque   | 16        | Nm    | Peak torque (< 1 s) from the [qdd100 spec](https://mjbots.com/products/qdd100-beta-3) |
+| Wheel | Position | -         | -     | - |
+| Wheel | Velocity | 785       | rad/s | Maximum velocity from the [mj5208 spec](https://mjbots.com/products/mj5208) |
+| Wheel | Torque   | 1.7       | Nm    | Peak torque from the [mj5208 spec](https://mjbots.com/products/mj5208) |
+
+### Maximum velocity for a qdd100 at 18 V
+
+Peak velocities for the qdd100 are rated as 3,600 dps at 36 V and 2,300 dps at 24 V. Assuming a linear velocity-voltage relationship (which is a big assumption) leads to 1,650 dps at the 18 V of the [RYOBI batteries used on Upkie](https://github.com/upkie/upkie/wiki/Bill-of-materials), or equivalently 28.8 rad/s after conversion and rounding.
 
 ## See also
 

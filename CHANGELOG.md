@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Filter frame names in frame display example
 
+### Changed
+
+- Increase velocity and torque limits to motor specs
+
 ## [1.5.0] - 2024-02-20
 
 ### Changed
