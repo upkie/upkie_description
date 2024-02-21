@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Increase velocity and torque limits to motor specs
+
 ## [1.5.0] - 2024-02-20
 
 ### Changed
