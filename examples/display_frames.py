@@ -27,7 +27,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--only",
-        help="only display the frame with this name",
+        help="only display frames whose names contain a given string",
     )
     parser.add_argument(
         "--frame-scale",
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     viewer = robot.viz.viewer
 
     for frame in robot.model.frames:
-        if frame.name == "universe" or (args.only and frame.name != args.only):
+        if frame.name == "universe" or (args.only and not args.only in frame.name):
             continue
         handle = viewer["pinocchio"]["visuals"][f"{frame.name}_0"]
         meshcat_shapes.frame(

@@ -535,6 +535,34 @@ And in case of doubt:
         <origin rpy="3.141592653589793 0 0" xyz="0 0 -0.0015"/>
     </joint>
 
+    <link name="left_anchor">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.005" />
+            <geometry>
+                <box size="0.01 0.01 0.01" />
+            </geometry>
+            <material name="orange" />
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0.005" />
+            <geometry>
+                <box size="0.01 0.01 0.01" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0.005" />
+            <mass value="0.01"/>  <!-- virtual -->
+            <!-- ./box_inertia.py 0.01 0.01 0.01 0.01 -->
+            <inertia ixx="1.6666666666666668e-07" ixy="0" ixz="0" iyx="0" iyy="1.6666666666666668e-07" iyz="0" izx="0" izy="0" izz="1.6666666666666668e-07" />
+        </inertial>
+    </link>
+
+    <joint name="left_anchor_fix" type="fixed">
+        <parent link="left_ankle_mj5208_stator"/>
+        <child link="left_anchor"/>
+        <origin rpy="1.5707963267948966 3.141592653589793 0" xyz="0 0.0545 0.05"/>
+    </joint>
+
     <link name="left_ankle_mj5208_rotor">
         <visual>
             <geometry>
@@ -1013,6 +1041,34 @@ And in case of doubt:
         <parent link="right_ankle_plate"/>
         <child link="right_ankle_mj5208_stator"/>
         <origin rpy="3.141592653589793 0 0" xyz="0 0 -0.0015"/>
+    </joint>
+
+    <link name="right_anchor">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.005" />
+            <geometry>
+                <box size="0.01 0.01 0.01" />
+            </geometry>
+            <material name="orange" />
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0.005" />
+            <geometry>
+                <box size="0.01 0.01 0.01" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0.005" />
+            <mass value="0.01"/>  <!-- virtual -->
+            <!-- ./box_inertia.py 0.01 0.01 0.01 0.01 -->
+            <inertia ixx="1.6666666666666668e-07" ixy="0" ixz="0" iyx="0" iyy="1.6666666666666668e-07" iyz="0" izx="0" izy="0" izz="1.6666666666666668e-07" />
+        </inertial>
+    </link>
+
+    <joint name="right_anchor_fix" type="fixed">
+        <parent link="right_ankle_mj5208_stator"/>
+        <child link="right_anchor"/>
+        <origin rpy="1.5707963267948966 0 0" xyz="0 0.0545 0.048"/>
     </joint>
 
     <link name="right_ankle_mj5208_rotor">
