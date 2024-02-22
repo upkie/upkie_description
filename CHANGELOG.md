@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Filter frame names in frame display example
+
 ## [1.5.0] - 2024-02-20
 
 ### Changed

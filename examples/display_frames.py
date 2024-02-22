@@ -26,14 +26,18 @@ from pinocchio.visualize import MeshcatVisualizer
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--only",
-        help="only display frames whose names contain a given string",
-    )
-    parser.add_argument(
         "--frame-scale",
         type=float,
         default=1.0,
         help="scaling factor applied to all frames",
+    )
+    parser.add_argument(
+        "--filter",
+        help="only display frames whose names contain a given string",
+    )
+    parser.add_argument(
+        "--only",
+        help="only display the designated frame",
     )
     args = parser.parse_args()
 
@@ -45,7 +49,11 @@ if __name__ == "__main__":
     viewer = robot.viz.viewer
 
     for frame in robot.model.frames:
-        if frame.name == "universe" or (args.only and not args.only in frame.name):
+        if (
+            frame.name == "universe"
+            or (args.only and frame.name != args.only)
+            or (args.filter and args.filter not in frame.name)
+        ):
             continue
         handle = viewer["pinocchio"]["visuals"][f"{frame.name}_0"]
         meshcat_shapes.frame(
@@ -64,9 +72,7 @@ if __name__ == "__main__":
         )
         Rx = transformations.rotation_matrix(0.5 * np.pi, [1.0, 0.0, 0.0])
         Rz = transformations.rotation_matrix(0.5 * np.pi, [0.0, 0.0, 1.0])
-        trans = transformations.translation_matrix(
-            [0.0, 0.0, 0.005 * args.frame_scale]
-        )
+        trans = transformations.translation_matrix([0.0, 0.0, 0.005 * args.frame_scale])
         handle["text"].set_transform(trans @ Rz @ Rx)
 
     time.sleep(1.0)  # avoid terminating too fast

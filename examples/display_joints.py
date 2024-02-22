@@ -73,9 +73,7 @@ if __name__ == "__main__":
         )
         Rx = transformations.rotation_matrix(0.5 * np.pi, [1.0, 0.0, 0.0])
         Rz = transformations.rotation_matrix(0.5 * np.pi, [0.0, 0.0, 1.0])
-        trans = transformations.translation_matrix(
-            [0.0, 0.0, 0.005 * args.frame_scale]
-        )
+        trans = transformations.translation_matrix([0.0, 0.0, 0.005 * args.frame_scale])
         handle["text"].set_transform(trans @ Rz @ Rx)
 
     time.sleep(1.0)  # avoid terminating too fast
