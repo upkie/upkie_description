@@ -569,7 +569,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="left_ankle_mj5208_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit velocity="785.4" effort="1.7"/>
+        <limit velocity="111.0" effort="1.7"/>
     </joint>
 
     <!-- Left wheel -->
@@ -1077,7 +1077,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="right_ankle_mj5208_rotor"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <axis xyz="0 0 -1"/>  <!-- search "moteus-direction-configuration" -->
-        <limit velocity="785.4" effort="1.7"/>
+        <limit velocity="111.0" effort="1.7"/>
     </joint>
 
     <!-- Right wheel -->
