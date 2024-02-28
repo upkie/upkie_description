@@ -37,7 +37,7 @@ Check out the [Python readme](dist/python/README.md) for more details.
 
 ### Maximum velocity for a qdd100 at 18 V
 
-Peak velocities for the qdd100 are rated as 3,600 dps at 36 V and 2,300 dps at 24 V. Assuming a linear velocity-voltage relationship (which is a big assumption) leads to 1,650 dps at the 18 V of the [RYOBI batteries used on Upkie](https://github.com/upkie/upkie/wiki/Bill-of-materials), or equivalently 28.8 rad/s after conversion and rounding.
+Peak velocities for the qdd100 are rated as 3,600 dps at 36 V and 2,300 dps at 24 V. Assuming a linear velocity-voltage relationship (which is a big assumption, for instance the actual maximum velocity will also depend on [`servo.pwm_rate_hz`](https://github.com/mjbots/moteus/blob/main/docs/reference.md#servopwm_rate_hz)) leads to 1,650 dps at the 18 V of the [RYOBI batteries used on Upkie](https://github.com/upkie/upkie/wiki/Bill-of-materials), or equivalently 28.8 rad/s after conversion and rounding.
 
 ## See also
 
