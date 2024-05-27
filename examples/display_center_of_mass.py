@@ -8,9 +8,10 @@ import time
 
 import meshcat_shapes
 import pinocchio as pin
-import upkie_description
 from meshcat import transformations
 from pinocchio.visualize import MeshcatVisualizer
+
+import upkie_description
 
 if __name__ == "__main__":
     robot = upkie_description.load_in_pinocchio(

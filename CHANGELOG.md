@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Example to display the center of mass
 - Filter frame names in frame display example
 
 ### Changed
