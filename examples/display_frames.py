@@ -23,14 +23,10 @@ import upkie_description
 from meshcat import transformations
 from pinocchio.visualize import MeshcatVisualizer
 
+FRAME_SCALE = 1.0
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--frame-scale",
-        type=float,
-        default=1.0,
-        help="scaling factor applied to all frames",
-    )
     parser.add_argument(
         "--filter",
         help="only display frames whose names contain a given string",
@@ -58,8 +54,8 @@ if __name__ == "__main__":
         handle = viewer["pinocchio"]["visuals"][f"{frame.name}_0"]
         meshcat_shapes.frame(
             handle["frame"],
-            axis_length=0.05 * args.frame_scale,
-            axis_thickness=0.002 * args.frame_scale,
+            axis_length=0.05 * FRAME_SCALE,
+            axis_thickness=0.002 * FRAME_SCALE,
             opacity=0.8,
             origin_radius=0.005,
         )
@@ -72,7 +68,7 @@ if __name__ == "__main__":
         )
         Rx = transformations.rotation_matrix(0.5 * np.pi, [1.0, 0.0, 0.0])
         Rz = transformations.rotation_matrix(0.5 * np.pi, [0.0, 0.0, 1.0])
-        trans = transformations.translation_matrix([0.0, 0.0, 0.005 * args.frame_scale])
+        trans = transformations.translation_matrix([0.0, 0.0, 0.005 * FRAME_SCALE])
         handle["text"].set_transform(trans @ Rz @ Rx)
 
     time.sleep(1.0)  # avoid terminating too fast
