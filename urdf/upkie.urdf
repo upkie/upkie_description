@@ -48,7 +48,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="base">
         <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero -->
+            <mass value="0.001" />  <!-- not zero, see [1] -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -58,7 +58,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="imu">
         <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero -->
+            <mass value="0.001" />  <!-- not zero, see [1] -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -491,7 +491,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="left_anchor">
         <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero -->
+            <mass value="0.001" />  <!-- not zero, see [1] -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -594,7 +594,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="left_contact">
         <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero -->
+            <mass value="0.001" />  <!-- not zero, see [1] -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -610,7 +610,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="left_wheel_center">
         <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero -->
+            <mass value="0.001" />  <!-- not zero, see [1] -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -960,7 +960,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="right_anchor">
         <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero -->
+            <mass value="0.001" />  <!-- not zero, see [1] -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -1063,7 +1063,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="right_contact">
         <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero -->
+            <mass value="0.001" />  <!-- not zero, see [1] -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -1079,7 +1079,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="right_wheel_center">
         <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero -->
+            <mass value="0.001" />  <!-- not zero, see [1] -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -1090,4 +1090,14 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="right_wheel_center" />
         <origin rpy="1.5707963267948966 3.141592653589793 0" xyz="0 0 0" />
     </joint>
+<!--
+
+Footnotes:
+
+[1] Setting the mass of a virtual link to zero prevents the base link from
+free-floating in Bullet. Since our description does not account for screws and
+cables anyway, the additional 1 gram per virtual link should not make a
+significant difference.
+
+-->
 </robot>
