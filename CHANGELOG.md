@@ -12,9 +12,14 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Increase velocity and torque limits to motor specs
+- Make "base" a virtual link
+- Zero out inertias of virtual links
+
+### Removed
+
+- Remove dummy "orange" color from materials
 - Remove collision meshes of virtual links
 - Remove visualization meshes of virtual links
-- Zero out inertias of virtual links
 
 ## [1.5.0] - 2024-02-20
 
