@@ -62,18 +62,18 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
                 <box size="0.01 0.01 0.01" />
             </geometry>
         </collision>
-        <inertial>
-            <mass value="0.001" />
-            <!-- ./box_inertia.py 0.001 0.01 0.01 0.01 -->
-            <inertia ixx="1.6666666666666667e-08" ixy="0" ixz="0" iyx="0" iyy="1.6666666666666667e-08" iyz="0" izx="0" izy="0" izz="1.6666666666666667e-08" />
+        <inertial>  <!-- virtual -->
+            <mass value="0" />
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
     </link>
 
     <!-- IMU -->
 
     <link name="imu">
-        <inertial>
-            <mass value="0" />  <!-- virtual -->
+        <inertial>  <!-- virtual -->
+            <mass value="0" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -505,8 +505,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     </joint>
 
     <link name="left_anchor">
-        <inertial>
-            <mass value="0" />  <!-- virtual -->
+        <inertial>  <!-- virtual -->
+            <mass value="0" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
