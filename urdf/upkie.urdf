@@ -9,6 +9,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
 -->
 <robot name="upkie">
+
     <material name="black">
         <color rgba="0.1 0.1 0.1 1" />
     </material>
@@ -19,6 +20,10 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <material name="light_gray">
         <color rgba="0.8 0.8 0.8 1" />
+    </material>
+
+    <material name="orange">
+        <color rgba="1.0 0.5 0.0 1" />
     </material>
 
     <material name="light_wood">
@@ -45,13 +50,22 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <color rgba="0.22 0.22 0.25 1.0" />
     </material>
 
-    <!-- Base link -->
-
     <link name="base">
+        <visual>
+            <geometry>
+                <box size="0.01 0.001 0.001" />
+            </geometry>
+            <material name="orange" />
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.01 0.01 0.01" />
+            </geometry>
+        </collision>
         <inertial>
-            <mass value="0" />  <!-- virtual -->
-            <origin rpy="0 0 0" xyz="0 0 0" />
-            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+            <mass value="0.001" />
+            <!-- ./box_inertia.py 0.001 0.01 0.01 0.01 -->
+            <inertia ixx="1.6666666666666667e-08" ixy="0" ixz="0" iyx="0" iyy="1.6666666666666667e-08" iyz="0" izx="0" izy="0" izz="1.6666666666666667e-08" />
         </inertial>
     </link>
 
