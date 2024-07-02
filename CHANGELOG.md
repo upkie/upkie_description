@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 
 - Increase velocity and torque limits to motor specs
 - Make "base" a virtual link
+- Use the same syntax everywhere for self-closing markups
 - Zero out inertias of virtual links
 
 ### Removed
