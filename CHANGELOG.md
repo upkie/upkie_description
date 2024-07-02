@@ -12,6 +12,9 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Increase velocity and torque limits to motor specs
+- Remove collision meshes of virtual links
+- Remove visualization meshes of virtual links
+- Zero out inertias of virtual links
 
 ## [1.5.0] - 2024-02-20
 
