@@ -22,10 +22,6 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <color rgba="0.8 0.8 0.8 1" />
     </material>
 
-    <material name="orange">
-        <color rgba="1.0 0.5 0.0 1" />
-    </material>
-
     <material name="light_wood">
         <color rgba="1 0.77 0.48 1" />
     </material>
@@ -51,17 +47,6 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     </material>
 
     <link name="base">
-        <visual>
-            <geometry>
-                <box size="0.01 0.001 0.001" />
-            </geometry>
-            <material name="orange" />
-        </visual>
-        <collision>
-            <geometry>
-                <box size="0.01 0.01 0.01" />
-            </geometry>
-        </collision>
         <inertial>  <!-- virtual -->
             <mass value="0.001" />  <!-- not zero -->
             <origin rpy="0 0 0" xyz="0 0 0" />
