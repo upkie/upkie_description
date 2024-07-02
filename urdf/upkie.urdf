@@ -63,7 +63,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
             </geometry>
         </collision>
         <inertial>  <!-- virtual -->
-            <mass value="0" />
+            <mass value="0.001" />  <!-- not zero -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -73,7 +73,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="imu">
         <inertial>  <!-- virtual -->
-            <mass value="0" />
+            <mass value="0.001" />  <!-- not zero -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -506,7 +506,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="left_anchor">
         <inertial>  <!-- virtual -->
-            <mass value="0" />
+            <mass value="0.001" />  <!-- not zero -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -609,7 +609,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="left_contact">
         <inertial>  <!-- virtual -->
-            <mass value="0" />
+            <mass value="0.001" />  <!-- not zero -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -625,7 +625,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="left_wheel_center">
         <inertial>  <!-- virtual -->
-            <mass value="0" />
+            <mass value="0.001" />  <!-- not zero -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -975,7 +975,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="right_anchor">
         <inertial>  <!-- virtual -->
-            <mass value="0" />
+            <mass value="0.001" />  <!-- not zero -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -1078,7 +1078,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="right_contact">
         <inertial>  <!-- virtual -->
-            <mass value="0" />
+            <mass value="0.001" />  <!-- not zero -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -1094,7 +1094,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
 
     <link name="right_wheel_center">
         <inertial>  <!-- virtual -->
-            <mass value="0" />
+            <mass value="0.001" />  <!-- not zero -->
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
