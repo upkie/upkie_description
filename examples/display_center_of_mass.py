@@ -13,8 +13,6 @@ from pinocchio.visualize import MeshcatVisualizer
 
 import upkie_description
 
-RADIUS_PER_KG = 0.01  # [m] / [kg]
-
 if __name__ == "__main__":
     robot = upkie_description.load_in_pinocchio(
         # NB: we want a free-flyer in this example, otherwise the torso will be
