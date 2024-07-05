@@ -19,7 +19,7 @@ fi
 SCRIPT=$(realpath "$0")
 SCRIPTDIR=$(dirname "${SCRIPT}")
 COMMAND=$@
-SRCDIR=${SCRIPTDIR}/../..
+SRCDIR=${SCRIPTDIR}/..
 TMPDIR=$(mktemp -d)
 
 echo "[debug] COMMAND=${COMMAND}"

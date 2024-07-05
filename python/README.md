@@ -9,13 +9,13 @@ URDF description for the [Upkie](https://hackaday.io/project/185729-upkie-wheele
 
 ## Installation
 
-### Conda
+### From conda-forge
 
 ```
-conda install upkie_description
+conda install -c conda-forge upkie_description
 ```
 
-### PyPI
+### From PyPI
 
 ```
 pip install upkie_description
