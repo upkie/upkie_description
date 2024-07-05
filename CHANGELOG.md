@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.6.0] - 2024-07-05
+
 ### Added
 
 - Example to display the center of mass
@@ -105,7 +107,8 @@ Initial robot description.
 - Robot description (kinematics, inertias, collisions) in URDF
 - Scripts to compute box and cylinder inertias
 
-[unreleased]: https://github.com/upkie/upkie_description/compare/v1.5.0...HEAD
+[unreleased]: https://github.com/upkie/upkie_description/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/upkie/upkie_description/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/upkie/upkie_description/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/upkie/upkie_description/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/upkie/upkie_description/compare/v1.2.0...v1.3.0
