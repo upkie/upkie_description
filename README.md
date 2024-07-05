@@ -18,7 +18,7 @@ import upkie_description
 robot = upkie_description.load_in_pinocchio()
 ```
 
-Check out the [Python readme](dist/python/README.md) for more details.
+Check out the [Python readme](python/README.md) for more details.
 
 ## Joint limits
 
