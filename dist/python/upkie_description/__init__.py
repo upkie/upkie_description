@@ -11,7 +11,7 @@ URDF description for the Upkie wheeled biped.
 
 from .paths import meshes_path, path, urdf_path
 
-__version__ = "1.5.0"
+__version__ = "1.6.0"
 
 __all__ = [
     "meshes_path",
