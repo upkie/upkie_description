@@ -667,12 +667,10 @@
             </geometry>
         </collision>
         <!-- mass guessed from spec -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 -0.0025" />
-            <mass value="0.015" />
-            <!-- ./cylinder_inertia.py 0.015 0.023 0.005 -->
-            <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyx="0" iyy="2.0149999999999998e-06" iyz="0" izx="0" izy="0" izz="3.9675e-06" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 -0.0025"
+            mass="0.015"
+            radius="0.023" length="0.005" />
     </link>
 
     <joint name="right_hip" type="revolute">
@@ -698,12 +696,10 @@
             </geometry>
         </collision>
         <!-- mass measured with screws -->
-        <inertial>
-            <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <mass value="0.05267" />
-            <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
-            <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 1.5707963267948966 0" xyz="0 0 0.025"
+            mass="0.05267"
+            radius="0.025" length="0.09" />
     </link>
 
     <joint name="right_hip_horn_fix" type="fixed">
@@ -762,12 +758,10 @@
             </geometry>
         </collision>
         <!-- mass based on filament estimate from Prusa Slicer -->
-        <inertial>
-            <origin rpy="0 1.5707963267948966 0" xyz="0.03 0 0" />
-            <mass value="0.09874" />
-            <!-- ./cylinder_inertia.py 0.09874 0.05 0.06 -->
-            <inertia ixx="9.133450000000001e-05" ixy="0" ixz="0" iyx="0" iyy="9.133450000000001e-05" iyz="0" izx="0" izy="0" izz="0.000123425" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 1.5707963267948966 0" xyz="0.03 0 0"
+            mass="0.09874"
+            radius="0.05" length="0.06" />
     </link>
 
     <link name="right_knee_qdd100_stator">
@@ -819,12 +813,10 @@
             </geometry>
         </collision>
         <!-- mass guessed from spec -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 -0.0025" />
-            <mass value="0.015" />
-            <!-- ./cylinder_inertia.py 0.015 0.023 0.005 -->
-            <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyx="0" iyy="2.0149999999999998e-06" iyz="0" izx="0" izy="0" izz="3.9675e-06" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 -0.0025"
+            mass="0.015"
+            radius="0.023" length="0.005" />
     </link>
 
     <link name="right_knee_horn">
@@ -841,12 +833,10 @@
             </geometry>
         </collision>
         <!-- mass measured with screws -->
-        <inertial>
-            <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <mass value="0.05267" />
-            <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
-            <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 1.5707963267948966 0" xyz="0 0 0.025"
+            mass="0.05267"
+            radius="0.025" length="0.09" />
     </link>
 
     <joint name="right_knee_horn_fix" type="fixed">
