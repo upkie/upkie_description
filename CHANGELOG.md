@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Change parent of "imu" frame from "base" to "torso"
 - Increase velocity and torque limits to motor specs
 - Make "base" a virtual link
 - Use the same syntax everywhere for self-closing markups
