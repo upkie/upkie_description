@@ -473,12 +473,10 @@
             </geometry>
         </collision>
         <!-- mass measured was 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <mass value="0.1721" />
-            <!-- ./cylinder_inertia.py 0.1721 0.03 0.018 -->
-            <inertia ixx="4.3369200000000005e-05" ixy="0" ixz="0" iyx="0" iyy="4.3369200000000005e-05" iyz="0" izx="0" izy="0" izz="7.7445e-05" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0.01"
+            mass="0.1721"
+            radius="0.03" length="0.018" />
     </link>
 
     <joint name="left_ankle_mj5208_stator_fix" type="fixed">
@@ -517,12 +515,10 @@
             </geometry>
         </collision>
         <!-- mass is a pure guess -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 0.015" />
-            <mass value="0.05" />
-            <!-- ./cylinder_inertia.py 0.05 0.034 0.016 -->
-            <inertia ixx="1.551666666666667e-05" ixy="0" ixz="0" iyx="0" iyy="1.551666666666667e-05" iyz="0" izx="0" izy="0" izz="2.8900000000000005e-05" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0.015"
+            mass="0.05"
+            radius="0.034" length="0.016" />
     </link>
 
     <joint name="left_wheel" type="revolute">
@@ -550,12 +546,10 @@
             </geometry>
         </collision>
         <!-- mass measured with hub adapter -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 0.0125" />
-            <mass value="0.0454" />
-            <!-- ./cylinder_inertia.py 0.0454 0.039 0.025 -->
-            <inertia ixx="1.9627933333333332e-05" ixy="0" ixz="0" iyx="0" iyy="1.9627933333333332e-05" iyz="0" izx="0" izy="0" izz="3.45267e-05" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0.0125"
+            mass="0.0454"
+            radius="0.039" length="0.025" />
     </link>
 
     <joint name="left_wheel_hub_fix" type="fixed">
@@ -1034,12 +1028,10 @@
             </geometry>
         </collision>
         <!-- mass measured with hub adapter -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 0.0125" />
-            <mass value="0.0454" />
-            <!-- ./cylinder_inertia.py 0.0454 0.039 0.025 -->
-            <inertia ixx="1.9627933333333332e-05" ixy="0" ixz="0" iyx="0" iyy="1.9627933333333332e-05" iyz="0" izx="0" izy="0" izz="3.45267e-05" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0.0125"
+            mass="0.0454"
+            radius="0.039" length="0.025" />
     </link>
 
     <joint name="right_wheel_hub_fix" type="fixed">
@@ -1061,11 +1053,10 @@
             </geometry>
         </collision>
         <!-- mass measured on a real tire -->
-        <inertial>
-            <mass value="0.08715" />
-            <!-- ./cylinder_inertia.py 0.08715 0.05 0.04 -->
-            <inertia ixx="6.608875000000002e-05" ixy="0" ixz="0" iyx="0" iyy="6.608875000000002e-05" iyz="0" izx="0" izy="0" izz="0.00010893750000000003" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0"
+            mass="0.08715"
+            radius="0.05" length="0.04" />
         <contact>
             <lateral_friction value="1.0" />
             <rolling_friction value="0.01" />
