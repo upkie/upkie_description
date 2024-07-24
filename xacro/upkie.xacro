@@ -21,7 +21,7 @@
         </inertial>
     </link>
 
-    <xacro:torso with_camera="false" with_handle="true" />
+    <xacro:torso with_handle="true" />
 
     <!-- Left leg -->
 
