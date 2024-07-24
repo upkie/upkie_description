@@ -2,12 +2,8 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <!-- Copyright 2022 Stéphane Caron -->
 <!-- Copyright 2023 Inria -->
-<!--
-
-Conventions in this file are detailed in:
-https://github.com/upkie/upkie_description/wiki/Model-conventions
-
--->
+<!-- This file was generated from upkie.xacro -->
+<!-- Conventions in this file are detailed in: https://github.com/upkie/upkie_description/wiki/ -->
 <robot name="upkie">
 
     <material name="black">
@@ -221,7 +217,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <origin rpy="0 0 0" xyz="0 0 0.0292" />
         <!-- negative z-axis: search "moteus-direction-configuration" -->
         <axis xyz="0 0 -1" />
-        <limit lower="-1.26" upper="1.26" velocity="28.8" effort="16.0" />
+        <limit effort="16.0" lower="-1.26" upper="1.26" velocity="28.8" />
     </joint>
 
     <link name="left_hip_horn">
@@ -345,7 +341,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <origin rpy="0 0 0" xyz="0 0 0.0292" />
         <!-- negative z-axis: search "moteus-direction-configuration" -->
         <axis xyz="0 0 -1" />
-        <limit lower="-2.51" upper="2.51" velocity="28.8" effort="16.0" />
+        <limit effort="16.0" lower="-2.51" upper="2.51" velocity="28.8" />
     </joint>
 
     <link name="left_knee_qdd100_rotor">
@@ -555,7 +551,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <origin rpy="0 0 0" xyz="0 0 0" />
         <!-- negative z-axis: search "moteus-direction-configuration" -->
         <axis xyz="0 0 -1" />
-        <limit velocity="111.0" effort="1.7" />
+        <limit effort="1.7" velocity="111.0" />
     </joint>
 
     <!-- Left wheel -->
@@ -714,7 +710,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <origin rpy="0 0 0" xyz="0 0 0.0292" />
         <!-- negative z-axis: search "moteus-direction-configuration" -->
         <axis xyz="0 0 -1" />
-        <limit lower="-1.26" upper="1.26" velocity="28.8" effort="16.0" />
+        <limit effort="16.0" lower="-1.26" upper="1.26" velocity="28.8" />
     </joint>
 
     <link name="right_hip_horn">
@@ -838,7 +834,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <origin rpy="0 0 0" xyz="0 0 0.0292" />
         <!-- negative z-axis: search "moteus-direction-configuration" -->
         <axis xyz="0 0 -1" />
-        <limit lower="-2.51" upper="2.51" velocity="28.8" effort="16.0" />
+        <limit effort="16.0" lower="-2.51" upper="2.51" velocity="28.8" />
     </joint>
 
     <link name="right_knee_qdd100_rotor">
@@ -1048,7 +1044,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <origin rpy="0 0 0" xyz="0 0 0" />
         <!-- negative z-axis: search "moteus-direction-configuration" -->
         <axis xyz="0 0 -1" />
-        <limit velocity="111.0" effort="1.7" />
+        <limit effort="1.7" velocity="111.0" />
     </joint>
 
     <!-- Right wheel -->
@@ -1146,6 +1142,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <child link="right_wheel_center" />
         <origin rpy="1.5707963267948966 3.141592653589793 0" xyz="0 0 0" />
     </joint>
+</robot>
 <!--
 
 Footnotes:
@@ -1156,4 +1153,3 @@ cables anyway, the additional 1 gram per virtual link should not make a
 significant difference.
 
 -->
-</robot>
