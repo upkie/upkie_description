@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- SPDX-License-Identifier: Apache-2.0 -->
-<!-- Copyright 2022 Stéphane Caron -->
-<!-- Copyright 2023 Inria -->
-<!-- This file was generated from upkie.xacro -->
-<!-- Conventions in this file are detailed in: https://github.com/upkie/upkie_description/wiki/ -->
-<robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">
+<!--
 
+SPDX-License-Identifier: Apache-2.0
+Copyright 2022 Stéphane Caron
+Copyright 2023 Inria
+
+This file was generated from `upkie.xacro`.
+
+Conventions in this file are detailed in:
+    https://github.com/upkie/upkie_description/wiki/
+
+-->
+<robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">
     <xacro:include filename="xacro/box_inertia.xacro" />
     <xacro:include filename="xacro/cylinder_inertia.xacro" />
     <xacro:include filename="xacro/materials.xacro" />

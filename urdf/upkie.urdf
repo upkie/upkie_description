@@ -1,9 +1,16 @@
 <?xml version="1.0" ?>
-<!-- SPDX-License-Identifier: Apache-2.0 -->
-<!-- Copyright 2022 Stéphane Caron -->
-<!-- Copyright 2023 Inria -->
-<!-- This file was generated from upkie.xacro -->
-<!-- Conventions in this file are detailed in: https://github.com/upkie/upkie_description/wiki/ -->
+<!--
+
+SPDX-License-Identifier: Apache-2.0
+Copyright 2022 Stéphane Caron
+Copyright 2023 Inria
+
+This file was generated from `upkie.xacro`.
+
+Conventions in this file are detailed in:
+    https://github.com/upkie/upkie_description/wiki/
+
+-->
 <robot name="upkie">
   <material name="black">
     <color rgba="0.1 0.1 0.1 1"/>
