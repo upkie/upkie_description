@@ -173,7 +173,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
             <geometry>
-                <cylinder radius="0.05" length="0.03" />
+                <cylinder length="0.03" radius="0.05" />
             </geometry>
         </collision>
         <inertial>
@@ -200,7 +200,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 -0.0025" />
             <geometry>
-                <cylinder radius="0.023" length="0.005" />
+                <cylinder length="0.005" radius="0.023" />
             </geometry>
         </collision>
         <inertial>
@@ -229,7 +229,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
             <geometry>
-                <cylinder radius="0.025" length="0.09" />
+                <cylinder length="0.09" radius="0.025" />
             </geometry>
         </collision>
         <inertial>
@@ -258,7 +258,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.012" length="0.26" />
+                <cylinder length="0.26" radius="0.012" />
             </geometry>
             <material name="light_wood" />
         </collision>
@@ -294,7 +294,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 1.5707963267948966 0" xyz="0.03 0 0" />
             <geometry>
-                <cylinder radius="0.05" length="0.06" />
+                <cylinder length="0.06" radius="0.05" />
             </geometry>
         </collision>
         <inertial>
@@ -315,7 +315,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
             <geometry>
-                <cylinder radius="0.05" length="0.03" />
+                <cylinder length="0.03" radius="0.05" />
             </geometry>
         </collision>
         <inertial>
@@ -350,7 +350,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 -0.0025" />
             <geometry>
-                <cylinder radius="0.023" length="0.005" />
+                <cylinder length="0.005" radius="0.023" />
             </geometry>
         </collision>
         <inertial>
@@ -371,7 +371,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
             <geometry>
-                <cylinder radius="0.025" length="0.09" />
+                <cylinder length="0.09" radius="0.025" />
             </geometry>
         </collision>
         <inertial>
@@ -400,7 +400,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.012" length="0.26" />
+                <cylinder length="0.26" radius="0.012" />
             </geometry>
             <material name="light_wood" />
         </collision>
@@ -483,7 +483,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.01" />
             <geometry>
-                <cylinder radius="0.03" length="0.018" />
+                <cylinder length="0.018" radius="0.03" />
             </geometry>
         </collision>
         <inertial>
@@ -527,7 +527,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
             <geometry>
-                <cylinder radius="0.034" length="0.016" />
+                <cylinder length="0.016" radius="0.034" />
             </geometry>
         </collision>
         <inertial>
@@ -558,7 +558,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.0125" />
             <geometry>
-                <cylinder radius="0.039" length="0.025" />
+                <cylinder length="0.025" radius="0.039" />
             </geometry>
         </collision>
         <inertial>
@@ -585,7 +585,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.05" length="0.04" />
+                <cylinder length="0.04" radius="0.05" />
             </geometry>
         </collision>
         <inertial>
@@ -656,7 +656,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
             <geometry>
-                <cylinder radius="0.05" length="0.03" />
+                <cylinder length="0.03" radius="0.05" />
             </geometry>
         </collision>
         <inertial>
@@ -683,7 +683,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 -0.0025" />
             <geometry>
-                <cylinder radius="0.023" length="0.005" />
+                <cylinder length="0.005" radius="0.023" />
             </geometry>
         </collision>
         <inertial>
@@ -712,7 +712,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
             <geometry>
-                <cylinder radius="0.025" length="0.09" />
+                <cylinder length="0.09" radius="0.025" />
             </geometry>
         </collision>
         <inertial>
@@ -741,7 +741,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.012" length="0.26" />
+                <cylinder length="0.26" radius="0.012" />
             </geometry>
             <material name="light_wood" />
         </collision>
@@ -777,7 +777,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 1.5707963267948966 0" xyz="0.03 0 0" />
             <geometry>
-                <cylinder radius="0.05" length="0.06" />
+                <cylinder length="0.06" radius="0.05" />
             </geometry>
         </collision>
         <inertial>
@@ -798,7 +798,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
             <geometry>
-                <cylinder radius="0.05" length="0.03" />
+                <cylinder length="0.03" radius="0.05" />
             </geometry>
         </collision>
         <inertial>
@@ -833,7 +833,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 -0.0025" />
             <geometry>
-                <cylinder radius="0.023" length="0.005" />
+                <cylinder length="0.005" radius="0.023" />
             </geometry>
         </collision>
         <inertial>
@@ -854,7 +854,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
             <geometry>
-                <cylinder radius="0.025" length="0.09" />
+                <cylinder length="0.09" radius="0.025" />
             </geometry>
         </collision>
         <inertial>
@@ -883,7 +883,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.012" length="0.26" />
+                <cylinder length="0.26" radius="0.012" />
             </geometry>
             <material name="light_wood" />
         </collision>
@@ -966,7 +966,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.01" />
             <geometry>
-                <cylinder radius="0.03" length="0.018" />
+                <cylinder length="0.018" radius="0.03" />
             </geometry>
         </collision>
         <inertial>
@@ -1010,7 +1010,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
             <geometry>
-                <cylinder radius="0.034" length="0.016" />
+                <cylinder length="0.016" radius="0.034" />
             </geometry>
         </collision>
         <inertial>
@@ -1041,7 +1041,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0.0125" />
             <geometry>
-                <cylinder radius="0.039" length="0.025" />
+                <cylinder length="0.025" radius="0.039" />
             </geometry>
         </collision>
         <inertial>
@@ -1068,7 +1068,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.05" length="0.04" />
+                <cylinder length="0.04" radius="0.05" />
             </geometry>
         </collision>
         <inertial>
