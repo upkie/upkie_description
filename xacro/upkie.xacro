@@ -12,10 +12,10 @@ Conventions in this file are detailed in:
 
 -->
 <robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">
-    <xacro:include filename="xacro/box_inertia.xacro" />
-    <xacro:include filename="xacro/cylinder_inertia.xacro" />
-    <xacro:include filename="xacro/materials.xacro" />
-    <xacro:include filename="xacro/virtual_link_inertia.xacro" />
+    <xacro:include filename="xacro/utils/box_inertia.xacro" />
+    <xacro:include filename="xacro/utils/cylinder_inertia.xacro" />
+    <xacro:include filename="xacro/utils/materials.xacro" />
+    <xacro:include filename="xacro/utils/virtual_link_inertia.xacro" />
 
     <xacro:include filename="xacro/left_leg.xacro" />
     <xacro:include filename="xacro/right_leg.xacro" />
