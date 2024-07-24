@@ -394,11 +394,10 @@
             <material name="light_wood" />
         </collision>
         <!-- mass measured on average over four wooden sticks -->
-        <inertial>
-            <mass value="0.056" />
-            <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
-            <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0"
+            mass="0.056"
+            radius="0.012" length="0.026" />
     </link>
 
     <joint name="left_tibia_fix" type="fixed">
@@ -738,11 +737,10 @@
             <material name="light_wood" />
         </collision>
         <!-- mass measured on average over four wooden sticks -->
-        <inertial>
-            <mass value="0.056" />
-            <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
-            <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0"
+            mass="0.056"
+            radius="0.012" length="0.026" />
     </link>
 
     <joint name="right_femur_fix" type="fixed">
@@ -884,11 +882,10 @@
             <material name="light_wood" />
         </collision>
         <!-- mass measured on average over four wooden sticks -->
-        <inertial>
-            <mass value="0.056" />
-            <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
-            <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0"
+            mass="0.056"
+            radius="0.012" length="0.026" />
     </link>
 
     <joint name="right_tibia_fix" type="fixed">
@@ -964,12 +961,10 @@
             </geometry>
         </collision>
         <!-- mass measured was 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <mass value="0.1721" />
-            <!-- ./cylinder_inertia.py 0.1721 0.03 0.018 -->
-            <inertia ixx="4.3369200000000005e-05" ixy="0" ixz="0" iyx="0" iyy="4.3369200000000005e-05" iyz="0" izx="0" izy="0" izz="7.7445e-05" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0.01"
+            mass="0.1721"
+            radius="0.03" length="0.018" />
     </link>
 
     <joint name="right_ankle_mj5208_stator_fix" type="fixed">
@@ -1008,12 +1003,10 @@
             </geometry>
         </collision>
         <!-- mass is a pure guess -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 0.015" />
-            <mass value="0.05" />
-            <!-- ./cylinder_inertia.py 0.05 0.034 0.016 -->
-            <inertia ixx="1.551666666666667e-05" ixy="0" ixz="0" iyx="0" iyy="1.551666666666667e-05" iyz="0" izx="0" izy="0" izz="2.8900000000000005e-05" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0.015"
+            mass="0.05"
+            radius="0.034" length="0.016" />
     </link>
 
     <joint name="right_wheel" type="revolute">
