@@ -111,8 +111,8 @@
                 <box size="0.13 0.074 0.055" />
             </geometry>
         </collision>
+        <!-- mass measurement was imprecise -->
         <inertial>
-            <!-- mass measurement was imprecise -->
             <mass value="0.8" />
             <!-- ./box_inertia.py 0.800 0.13 0.074 0.055 -->
             <inertia ixx="0.0005667333333333332" ixy="0" ixz="0" iyx="0" iyy="0.0013283333333333335" iyz="0" izx="0" izy="0" izz="0.0014917333333333332" />
@@ -140,9 +140,9 @@
                 <box size="0.120 0.07 0.04" />
             </geometry>
         </collision>
+        <!-- mass measured on a real robot -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <!-- mass measured on a real robot -->
             <mass value="0.0525" />
             <!-- ./box_inertia.py 0.0525 0.120 0.07 0.04 -->
             <inertia ixx="2.84375e-05" ixy="0" ixz="0" iyx="0" iyy="7e-05" iyz="0" izx="0" izy="0" izz="8.44375e-05" />
@@ -172,9 +172,9 @@
                 <cylinder length="0.03" radius="0.05" />
             </geometry>
         </collision>
+        <!-- mass guessed from spec -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
-            <!-- mass guessed from spec -->
             <mass value="0.47" />
             <!-- ./cylinder_inertia.py 0.470 0.05 0.03 -->
             <inertia ixx="0.000329" ixy="0" ixz="0" iyx="0" iyy="0.000329" iyz="0" izx="0" izy="0" izz="0.0005875" />
@@ -200,9 +200,9 @@
                 <cylinder length="0.005" radius="0.023" />
             </geometry>
         </collision>
+        <!-- mass guessed from spec -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 -0.0025" />
-            <!-- mass guessed from spec -->
             <mass value="0.015" />
             <!-- ./cylinder_inertia.py 0.015 0.023 0.005 -->
             <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyx="0" iyy="2.0149999999999998e-06" iyz="0" izx="0" izy="0" izz="3.9675e-06" />
@@ -231,9 +231,9 @@
                 <cylinder length="0.09" radius="0.025" />
             </geometry>
         </collision>
+        <!-- mass measured with screws -->
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <!-- mass measured with screws -->
             <mass value="0.05267" />
             <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
             <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
@@ -261,8 +261,8 @@
             </geometry>
             <material name="light_wood" />
         </collision>
+        <!-- mass measured on average over four wooden sticks -->
         <inertial>
-            <!-- mass measured on average over four wooden sticks -->
             <mass value="0.056" />
             <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
             <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
@@ -296,9 +296,9 @@
                 <cylinder length="0.06" radius="0.05" />
             </geometry>
         </collision>
+        <!-- mass based on filament estimate from Prusa Slicer -->
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0.03 0 0" />
-            <!-- mass based on filament estimate from Prusa Slicer -->
             <mass value="0.09874" />
             <!-- ./cylinder_inertia.py 0.09874 0.05 0.06 -->
             <inertia ixx="9.133450000000001e-05" ixy="0" ixz="0" iyx="0" iyy="9.133450000000001e-05" iyz="0" izx="0" izy="0" izz="0.000123425" />
@@ -318,9 +318,9 @@
                 <cylinder length="0.03" radius="0.05" />
             </geometry>
         </collision>
+        <!-- mass guessed from spec -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
-            <!-- mass guessed from spec -->
             <mass value="0.47" />
             <!-- ./cylinder_inertia.py 0.470 0.05 0.03 -->
             <inertia ixx="0.000329" ixy="0" ixz="0" iyx="0" iyy="0.000329" iyz="0" izx="0" izy="0" izz="0.0005875" />
@@ -355,9 +355,9 @@
                 <cylinder length="0.005" radius="0.023" />
             </geometry>
         </collision>
+        <!-- mass guessed from spec -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 -0.0025" />
-            <!-- mass guessed from spec -->
             <mass value="0.015" />
             <!-- ./cylinder_inertia.py 0.015 0.023 0.005 -->
             <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyx="0" iyy="2.0149999999999998e-06" iyz="0" izx="0" izy="0" izz="3.9675e-06" />
@@ -377,9 +377,9 @@
                 <cylinder length="0.09" radius="0.025" />
             </geometry>
         </collision>
+        <!-- mass measured with screws -->
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <!-- mass measured with screws -->
             <mass value="0.05267" />
             <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
             <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
@@ -407,8 +407,8 @@
             </geometry>
             <material name="light_wood" />
         </collision>
+        <!-- mass measured on average over four wooden sticks -->
         <inertial>
-            <!-- mass measured on average over four wooden sticks -->
             <mass value="0.056" />
             <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
             <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
@@ -436,9 +436,9 @@
                 <box size="0.092 0.068 0.056" />
             </geometry>
         </collision>
+        <!-- mass measured with screws -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0.002 0.0275" />
-            <!-- mass measured with screws -->
             <mass value="0.07863" />
             <!-- ./box_inertia.py 0.07863 0.092 0.068 0.056 -->
             <inertia ixx="5.084740000000001e-05" ixy="0" ixz="0" iyx="0" iyy="7.6009e-05" iyz="0" izx="0" izy="0" izz="8.575912e-05" />
@@ -463,8 +463,8 @@
                 <box size="0.09 0.046 0.004" />
             </geometry>
         </collision>
+        <!-- mass is a pure guess (^_^") -->
         <inertial>
-            <!-- mass is a pure guess (^_^") -->
             <mass value="0.02" />
             <!-- ./box_inertia.py 0.02 0.09 0.046 0.004 -->
             <inertia ixx="3.5533333333333333e-06" ixy="0" ixz="0" iyx="0" iyy="1.3526666666666667e-05" iyz="0" izx="0" izy="0" izz="1.7026666666666667e-05" />
@@ -490,9 +490,9 @@
                 <cylinder length="0.018" radius="0.03" />
             </geometry>
         </collision>
+        <!-- mass measured was 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <!-- mass measured was 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
             <mass value="0.1721" />
             <!-- ./cylinder_inertia.py 0.1721 0.03 0.018 -->
             <inertia ixx="4.3369200000000005e-05" ixy="0" ixz="0" iyx="0" iyy="4.3369200000000005e-05" iyz="0" izx="0" izy="0" izz="7.7445e-05" />
@@ -534,9 +534,9 @@
                 <cylinder length="0.016" radius="0.034" />
             </geometry>
         </collision>
+        <!-- mass is a pure guess -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
-            <!-- mass is a pure guess -->
             <mass value="0.05" />
             <!-- ./cylinder_inertia.py 0.05 0.034 0.016 -->
             <inertia ixx="1.551666666666667e-05" ixy="0" ixz="0" iyx="0" iyy="1.551666666666667e-05" iyz="0" izx="0" izy="0" izz="2.8900000000000005e-05" />
@@ -567,9 +567,9 @@
                 <cylinder length="0.025" radius="0.039" />
             </geometry>
         </collision>
+        <!-- mass measured with hub adapter -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.0125" />
-            <!-- mass measured with hub adapter -->
             <mass value="0.0454" />
             <!-- ./cylinder_inertia.py 0.0454 0.039 0.025 -->
             <inertia ixx="1.9627933333333332e-05" ixy="0" ixz="0" iyx="0" iyy="1.9627933333333332e-05" iyz="0" izx="0" izy="0" izz="3.45267e-05" />
@@ -594,8 +594,8 @@
                 <cylinder length="0.04" radius="0.05" />
             </geometry>
         </collision>
+        <!-- mass measured on a real robot -->
         <inertial>
-            <!-- mass measured on a real robot -->
             <mass value="0.08715" />
             <!-- ./cylinder_inertia.py 0.08715 0.05 0.04 -->
             <inertia ixx="6.608875000000002e-05" ixy="0" ixz="0" iyx="0" iyy="6.608875000000002e-05" iyz="0" izx="0" izy="0" izz="0.00010893750000000003" />
@@ -665,9 +665,9 @@
                 <cylinder length="0.03" radius="0.05" />
             </geometry>
         </collision>
+        <!-- mass guessed from spec -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
-            <!-- mass guessed from spec -->
             <mass value="0.47" />
             <!-- ./cylinder_inertia.py 0.470 0.05 0.03 -->
             <inertia ixx="0.000329" ixy="0" ixz="0" iyx="0" iyy="0.000329" iyz="0" izx="0" izy="0" izz="0.0005875" />
@@ -693,9 +693,9 @@
                 <cylinder length="0.005" radius="0.023" />
             </geometry>
         </collision>
+        <!-- mass guessed from spec -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 -0.0025" />
-            <!-- mass guessed from spec -->
             <mass value="0.015" />
             <!-- ./cylinder_inertia.py 0.015 0.023 0.005 -->
             <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyx="0" iyy="2.0149999999999998e-06" iyz="0" izx="0" izy="0" izz="3.9675e-06" />
@@ -724,9 +724,9 @@
                 <cylinder length="0.09" radius="0.025" />
             </geometry>
         </collision>
+        <!-- mass measured with screws -->
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <!-- mass measured with screws -->
             <mass value="0.05267" />
             <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
             <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
@@ -754,8 +754,8 @@
             </geometry>
             <material name="light_wood" />
         </collision>
+        <!-- mass measured on average over four wooden sticks -->
         <inertial>
-            <!-- mass measured on average over four wooden sticks -->
             <mass value="0.056" />
             <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
             <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
@@ -789,9 +789,9 @@
                 <cylinder length="0.06" radius="0.05" />
             </geometry>
         </collision>
+        <!-- mass based on filament estimate from Prusa Slicer -->
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0.03 0 0" />
-            <!-- mass based on filament estimate from Prusa Slicer -->
             <mass value="0.09874" />
             <!-- ./cylinder_inertia.py 0.09874 0.05 0.06 -->
             <inertia ixx="9.133450000000001e-05" ixy="0" ixz="0" iyx="0" iyy="9.133450000000001e-05" iyz="0" izx="0" izy="0" izz="0.000123425" />
@@ -811,9 +811,9 @@
                 <cylinder length="0.03" radius="0.05" />
             </geometry>
         </collision>
+        <!-- mass guessed from spec -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
-            <!-- mass guessed from spec -->
             <mass value="0.47" />
             <!-- ./cylinder_inertia.py 0.470 0.05 0.03 -->
             <inertia ixx="0.000329" ixy="0" ixz="0" iyx="0" iyy="0.000329" iyz="0" izx="0" izy="0" izz="0.0005875" />
@@ -848,9 +848,9 @@
                 <cylinder length="0.005" radius="0.023" />
             </geometry>
         </collision>
+        <!-- mass guessed from spec -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 -0.0025" />
-            <!-- mass guessed from spec -->
             <mass value="0.015" />
             <!-- ./cylinder_inertia.py 0.015 0.023 0.005 -->
             <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyx="0" iyy="2.0149999999999998e-06" iyz="0" izx="0" izy="0" izz="3.9675e-06" />
@@ -870,9 +870,9 @@
                 <cylinder length="0.09" radius="0.025" />
             </geometry>
         </collision>
+        <!-- mass measured with screws -->
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <!-- mass measured with screws -->
             <mass value="0.05267" />
             <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
             <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
@@ -900,8 +900,8 @@
             </geometry>
             <material name="light_wood" />
         </collision>
+        <!-- mass measured on average over four wooden sticks -->
         <inertial>
-            <!-- mass measured on average over four wooden sticks -->
             <mass value="0.056" />
             <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
             <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
@@ -929,9 +929,9 @@
                 <box size="0.092 0.068 0.056" />
             </geometry>
         </collision>
+        <!-- mass measured with screws -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0.002 0.0275" />
-            <!-- mass measured with screws -->
             <mass value="0.07863" />
             <!-- ./box_inertia.py 0.07863 0.092 0.068 0.056 -->
             <inertia ixx="5.084740000000001e-05" ixy="0" ixz="0" iyx="0" iyy="7.6009e-05" iyz="0" izx="0" izy="0" izz="8.575912e-05" />
@@ -956,8 +956,8 @@
                 <box size="0.09 0.046 0.004" />
             </geometry>
         </collision>
+        <!-- mass is a pure guess (^_^") -->
         <inertial>
-            <!-- mass is a pure guess (^_^") -->
             <mass value="0.02" />
             <!-- ./box_inertia.py 0.02 0.09 0.046 0.004 -->
             <inertia ixx="3.5533333333333333e-06" ixy="0" ixz="0" iyx="0" iyy="1.3526666666666667e-05" iyz="0" izx="0" izy="0" izz="1.7026666666666667e-05" />
@@ -983,9 +983,9 @@
                 <cylinder length="0.018" radius="0.03" />
             </geometry>
         </collision>
+        <!-- mass measured was 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <!-- mass measured was 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
             <mass value="0.1721" />
             <!-- ./cylinder_inertia.py 0.1721 0.03 0.018 -->
             <inertia ixx="4.3369200000000005e-05" ixy="0" ixz="0" iyx="0" iyy="4.3369200000000005e-05" iyz="0" izx="0" izy="0" izz="7.7445e-05" />
@@ -1027,9 +1027,9 @@
                 <cylinder length="0.016" radius="0.034" />
             </geometry>
         </collision>
+        <!-- mass is a pure guess -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.015" />
-            <!-- mass is a pure guess -->
             <mass value="0.05" />
             <!-- ./cylinder_inertia.py 0.05 0.034 0.016 -->
             <inertia ixx="1.551666666666667e-05" ixy="0" ixz="0" iyx="0" iyy="1.551666666666667e-05" iyz="0" izx="0" izy="0" izz="2.8900000000000005e-05" />
@@ -1060,9 +1060,9 @@
                 <cylinder length="0.025" radius="0.039" />
             </geometry>
         </collision>
+        <!-- mass measured with hub adapter -->
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.0125" />
-            <!-- mass measured with hub adapter -->
             <mass value="0.0454" />
             <!-- ./cylinder_inertia.py 0.0454 0.039 0.025 -->
             <inertia ixx="1.9627933333333332e-05" ixy="0" ixz="0" iyx="0" iyy="1.9627933333333332e-05" iyz="0" izx="0" izy="0" izz="3.45267e-05" />
@@ -1087,8 +1087,8 @@
                 <cylinder length="0.04" radius="0.05" />
             </geometry>
         </collision>
+        <!-- mass measured on a real tire -->
         <inertial>
-            <!-- mass measured on a real tire -->
             <mass value="0.08715" />
             <!-- ./cylinder_inertia.py 0.08715 0.05 0.04 -->
             <inertia ixx="6.608875000000002e-05" ixy="0" ixz="0" iyx="0" iyy="6.608875000000002e-05" iyz="0" izx="0" izy="0" izz="0.00010893750000000003" />
