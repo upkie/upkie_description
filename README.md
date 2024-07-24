@@ -22,8 +22,8 @@ Check out the [Python readme](python/README.md) for more details.
 
 ## Documentation
 
-- [Location and orientation of the IMU](https://github.com/upkie/upkie_description/wiki/IMU-frame)
 - [Joint limits](https://github.com/upkie/upkie_description/wiki/Joint-limits)
+- [Location of the IMU](https://github.com/upkie/upkie_description/wiki/IMU-frame)
 
 ## See also
 
