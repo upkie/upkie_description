@@ -7,6 +7,7 @@
 <robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">
 
     <xacro:include filename="xacro/box_inertia.xacro" />
+    <xacro:include filename="xacro/cylinder_inertia.xacro" />
 
     <material name="black">
         <color rgba="0.1 0.1 0.1 1" />
@@ -173,12 +174,10 @@
             </geometry>
         </collision>
         <!-- mass guessed from spec -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 0.015" />
-            <mass value="0.47" />
-            <!-- ./cylinder_inertia.py 0.470 0.05 0.03 -->
-            <inertia ixx="0.000329" ixy="0" ixz="0" iyx="0" iyy="0.000329" iyz="0" izx="0" izy="0" izz="0.0005875" />
-        </inertial>
+        <xacro:cylinder_inertia
+            rpy="0 0 0" xyz="0 0 0.015"
+            mass="0.47"
+            radius="0.05" length="0.03" />
     </link>
 
     <joint name="left_hip_qdd100_stator_fix" type="fixed">

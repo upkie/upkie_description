@@ -145,12 +145,10 @@
         <cylinder length="0.03" radius="0.05"/>
       </geometry>
     </collision>
-    <!-- mass guessed from spec -->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0.015"/>
       <mass value="0.47"/>
-      <!-- ./cylinder_inertia.py 0.470 0.05 0.03 -->
-      <inertia ixx="0.000329" ixy="0" ixz="0" iyx="0" iyy="0.000329" iyz="0" izx="0" izy="0" izz="0.0005875"/>
+      <inertia ixx="0.00032900000000000003" ixy="0" ixz="0" iyy="0.00032900000000000003" iyz="0" izz="0.0005875000000000001"/>
     </inertial>
   </link>
   <joint name="left_hip_qdd100_stator_fix" type="fixed">
