@@ -47,8 +47,10 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     </material>
 
     <link name="base">
-        <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero, see [1] -->
+        <!-- virtual link -->
+        <inertial>
+            <!-- mass should not be zero [1] -->
+            <mass value="0.001" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -57,8 +59,10 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     <!-- IMU -->
 
     <link name="imu">
-        <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero, see [1] -->
+        <!-- virtual link -->
+        <inertial>
+            <!-- mass should not be zero [1] -->
+            <mass value="0.001" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -85,7 +89,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
             </geometry>
         </collision>
         <inertial>
-            <mass value="1.0" />  <!-- measured net mass (5.4 [kg]) minus everything else -->
+            <!-- torso mass evaluated as net mass (5.4 [kg]) minus everything else -->
+            <mass value="1.0" />
             <!-- ./box_inertia.py 1.0 0.125 0.17 0.25 -->
             <inertia ixx="0.007616666666666667" ixy="0" ixz="0" iyx="0" iyy="0.006510416666666666" iyz="0" izx="0" izy="0" izz="0.0037104166666666674" />
         </inertial>
@@ -141,7 +146,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <mass value="0.0525" />  <!-- measured -->
+            <!-- mass measured on a real robot -->
+            <mass value="0.0525" />
             <!-- ./box_inertia.py 0.0525 0.120 0.07 0.04 -->
             <inertia ixx="2.84375e-05" ixy="0" ixz="0" iyx="0" iyy="7e-05" iyz="0" izx="0" izy="0" izz="8.44375e-05" />
         </inertial>
@@ -228,7 +234,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <mass value="0.05267" />  <!-- measured, with screws -->
+            <!-- mass measured with screws -->
+            <mass value="0.05267" />
             <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
             <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
         </inertial>
@@ -256,7 +263,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
             <material name="light_wood" />
         </collision>
         <inertial>
-            <mass value="0.056" />  <!-- measured, average over four sticks -->
+            <!-- mass measured on average over four wooden sticks -->
+            <mass value="0.056" />
             <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
             <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
         </inertial>
@@ -368,7 +376,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <mass value="0.05267" />  <!-- measured, with screws -->
+            <!-- mass measured with screws -->
+            <mass value="0.05267" />
             <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
             <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
         </inertial>
@@ -396,7 +405,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
             <material name="light_wood" />
         </collision>
         <inertial>
-            <mass value="0.056" />  <!-- measured, average over four sticks -->
+            <!-- mass measured on average over four wooden sticks -->
+            <mass value="0.056" />
             <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
             <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
         </inertial>
@@ -425,7 +435,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 0 0" xyz="0 0.002 0.0275" />
-            <mass value="0.07863" />  <!-- measured, with screws -->
+            <!-- mass measured with screws -->
+            <mass value="0.07863" />
             <!-- ./box_inertia.py 0.07863 0.092 0.068 0.056 -->
             <inertia ixx="5.084740000000001e-05" ixy="0" ixz="0" iyx="0" iyy="7.6009e-05" iyz="0" izx="0" izy="0" izz="8.575912e-05" />
         </inertial>
@@ -477,7 +488,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <mass value="0.1721" />  <!-- measured 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
+            <!-- mass measured was 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
+            <mass value="0.1721" />
             <!-- ./cylinder_inertia.py 0.1721 0.03 0.018 -->
             <inertia ixx="4.3369200000000005e-05" ixy="0" ixz="0" iyx="0" iyy="4.3369200000000005e-05" iyz="0" izx="0" izy="0" izz="7.7445e-05" />
         </inertial>
@@ -490,8 +502,10 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     </joint>
 
     <link name="left_anchor">
-        <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero, see [1] -->
+        <!-- virtual link -->
+        <inertial>
+            <!-- mass should not be zero [1] -->
+            <mass value="0.001" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -549,7 +563,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.0125" />
-            <mass value="0.0454" />  <!-- measured, with hub adapter -->
+            <!-- mass measured with hub adapter -->
+            <mass value="0.0454" />
             <!-- ./cylinder_inertia.py 0.0454 0.039 0.025 -->
             <inertia ixx="1.9627933333333332e-05" ixy="0" ixz="0" iyx="0" iyy="1.9627933333333332e-05" iyz="0" izx="0" izy="0" izz="3.45267e-05" />
         </inertial>
@@ -574,7 +589,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.08715" />  <!-- measured -->
+            <!-- mass measured on a real robot -->
+            <mass value="0.08715" />
             <!-- ./cylinder_inertia.py 0.08715 0.05 0.04 -->
             <inertia ixx="6.608875000000002e-05" ixy="0" ixz="0" iyx="0" iyy="6.608875000000002e-05" iyz="0" izx="0" izy="0" izz="0.00010893750000000003" />
         </inertial>
@@ -593,8 +609,10 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     </joint>
 
     <link name="left_contact">
-        <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero, see [1] -->
+        <!-- virtual link -->
+        <inertial>
+            <!-- mass should not be zero [1] -->
+            <mass value="0.001" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -609,8 +627,10 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     </joint>
 
     <link name="left_wheel_center">
-        <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero, see [1] -->
+        <!-- virtual link -->
+        <inertial>
+            <!-- mass should not be zero [1] -->
+            <mass value="0.001" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -697,7 +717,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <mass value="0.05267" />  <!-- measured, with screws -->
+            <!-- mass measured with screws -->
+            <mass value="0.05267" />
             <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
             <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
         </inertial>
@@ -725,7 +746,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
             <material name="light_wood" />
         </collision>
         <inertial>
-            <mass value="0.056" />  <!-- measured, average over four sticks -->
+            <!-- mass measured on average over four wooden sticks -->
+            <mass value="0.056" />
             <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
             <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
         </inertial>
@@ -837,7 +859,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025" />
-            <mass value="0.05267" />  <!-- measured, with screws -->
+            <!-- mass measured with screws -->
+            <mass value="0.05267" />
             <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
             <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05" />
         </inertial>
@@ -865,7 +888,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
             <material name="light_wood" />
         </collision>
         <inertial>
-            <mass value="0.056" />  <!-- measured, average over four sticks -->
+            <!-- mass measured on average over four wooden sticks -->
+            <mass value="0.056" />
             <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
             <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06" />
         </inertial>
@@ -894,7 +918,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 0 0" xyz="0 0.002 0.0275" />
-            <mass value="0.07863" />  <!-- measured, with screws -->
+            <!-- mass measured with screws -->
+            <mass value="0.07863" />
             <!-- ./box_inertia.py 0.07863 0.092 0.068 0.056 -->
             <inertia ixx="5.084740000000001e-05" ixy="0" ixz="0" iyx="0" iyy="7.6009e-05" iyz="0" izx="0" izy="0" izz="8.575912e-05" />
         </inertial>
@@ -946,7 +971,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <mass value="0.1721" />  <!-- measured 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
+            <!-- mass measured was 242.1 [g], minus 20 [g] for the plate, minus 50 [g] for the rotor -->
+            <mass value="0.1721" />
             <!-- ./cylinder_inertia.py 0.1721 0.03 0.018 -->
             <inertia ixx="4.3369200000000005e-05" ixy="0" ixz="0" iyx="0" iyy="4.3369200000000005e-05" iyz="0" izx="0" izy="0" izz="7.7445e-05" />
         </inertial>
@@ -959,8 +985,10 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     </joint>
 
     <link name="right_anchor">
-        <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero, see [1] -->
+        <!-- virtual link -->
+        <inertial>
+            <!-- mass should not be zero [1] -->
+            <mass value="0.001" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -1018,7 +1046,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
         </collision>
         <inertial>
             <origin rpy="0 0 0" xyz="0 0 0.0125" />
-            <mass value="0.0454" />  <!-- measured, with hub adapter -->
+            <!-- mass measured with hub adapter -->
+            <mass value="0.0454" />
             <!-- ./cylinder_inertia.py 0.0454 0.039 0.025 -->
             <inertia ixx="1.9627933333333332e-05" ixy="0" ixz="0" iyx="0" iyy="1.9627933333333332e-05" iyz="0" izx="0" izy="0" izz="3.45267e-05" />
         </inertial>
@@ -1043,7 +1072,8 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.08715" />  <!-- measured -->
+            <!-- mass measured on a real tire -->
+            <mass value="0.08715" />
             <!-- ./cylinder_inertia.py 0.08715 0.05 0.04 -->
             <inertia ixx="6.608875000000002e-05" ixy="0" ixz="0" iyx="0" iyy="6.608875000000002e-05" iyz="0" izx="0" izy="0" izz="0.00010893750000000003" />
         </inertial>
@@ -1062,8 +1092,10 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     </joint>
 
     <link name="right_contact">
-        <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero, see [1] -->
+        <!-- virtual link -->
+        <inertial>
+            <!-- mass should not be zero [1] -->
+            <mass value="0.001" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
@@ -1078,8 +1110,10 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions
     </joint>
 
     <link name="right_wheel_center">
-        <inertial>  <!-- virtual -->
-            <mass value="0.001" />  <!-- not zero, see [1] -->
+        <!-- virtual link -->
+        <inertial>
+            <!-- mass should not be zero [1] -->
+            <mass value="0.001" />
             <origin rpy="0 0 0" xyz="0 0 0" />
             <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
         </inertial>
