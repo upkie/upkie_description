@@ -169,12 +169,10 @@
         <cylinder length="0.005" radius="0.023"/>
       </geometry>
     </collision>
-    <!-- mass guessed from spec -->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 -0.0025"/>
       <mass value="0.015"/>
-      <!-- ./cylinder_inertia.py 0.015 0.023 0.005 -->
-      <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyx="0" iyy="2.0149999999999998e-06" iyz="0" izx="0" izy="0" izz="3.9675e-06"/>
+      <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyy="2.0149999999999998e-06" iyz="0" izz="3.9675e-06"/>
     </inertial>
   </link>
   <joint name="left_hip" type="revolute">
@@ -198,12 +196,10 @@
         <cylinder length="0.09" radius="0.025"/>
       </geometry>
     </collision>
-    <!-- mass measured with screws -->
     <inertial>
       <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025"/>
       <mass value="0.05267"/>
-      <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
-      <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05"/>
+      <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyy="4.37819375e-05" iyz="0" izz="1.6459375000000005e-05"/>
     </inertial>
   </link>
   <joint name="left_hip_horn_fix" type="fixed">
@@ -225,11 +221,10 @@
       </geometry>
       <material name="light_wood"/>
     </collision>
-    <!-- mass measured on average over four wooden sticks -->
     <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.056"/>
-      <!-- ./cylinder_inertia.py 0.056 0.012 0.026 -->
-      <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyx="0" iyy="5.170666666666667e-06" iyz="0" izx="0" izy="0" izz="4.0320000000000005e-06"/>
+      <inertia ixx="5.170666666666667e-06" ixy="0" ixz="0" iyy="5.170666666666667e-06" iyz="0" izz="4.0320000000000005e-06"/>
     </inertial>
   </link>
   <joint name="left_femur_fix" type="fixed">
@@ -256,12 +251,10 @@
         <cylinder length="0.06" radius="0.05"/>
       </geometry>
     </collision>
-    <!-- mass based on filament estimate from Prusa Slicer -->
     <inertial>
       <origin rpy="0 1.5707963267948966 0" xyz="0.03 0 0"/>
       <mass value="0.09874"/>
-      <!-- ./cylinder_inertia.py 0.09874 0.05 0.06 -->
-      <inertia ixx="9.133450000000001e-05" ixy="0" ixz="0" iyx="0" iyy="9.133450000000001e-05" iyz="0" izx="0" izy="0" izz="0.000123425"/>
+      <inertia ixx="9.133450000000001e-05" ixy="0" ixz="0" iyy="9.133450000000001e-05" iyz="0" izz="0.000123425"/>
     </inertial>
   </link>
   <link name="left_knee_qdd100_stator">
@@ -277,12 +270,10 @@
         <cylinder length="0.03" radius="0.05"/>
       </geometry>
     </collision>
-    <!-- mass guessed from spec -->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0.015"/>
       <mass value="0.47"/>
-      <!-- ./cylinder_inertia.py 0.470 0.05 0.03 -->
-      <inertia ixx="0.000329" ixy="0" ixz="0" iyx="0" iyy="0.000329" iyz="0" izx="0" izy="0" izz="0.0005875"/>
+      <inertia ixx="0.00032900000000000003" ixy="0" ixz="0" iyy="0.00032900000000000003" iyz="0" izz="0.0005875000000000001"/>
     </inertial>
   </link>
   <joint name="left_knee_qdd100_stator_fix" type="fixed">
@@ -311,12 +302,10 @@
         <cylinder length="0.005" radius="0.023"/>
       </geometry>
     </collision>
-    <!-- mass guessed from spec -->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 -0.0025"/>
       <mass value="0.015"/>
-      <!-- ./cylinder_inertia.py 0.015 0.023 0.005 -->
-      <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyx="0" iyy="2.0149999999999998e-06" iyz="0" izx="0" izy="0" izz="3.9675e-06"/>
+      <inertia ixx="2.0149999999999998e-06" ixy="0" ixz="0" iyy="2.0149999999999998e-06" iyz="0" izz="3.9675e-06"/>
     </inertial>
   </link>
   <link name="left_knee_horn">
@@ -332,12 +321,10 @@
         <cylinder length="0.09" radius="0.025"/>
       </geometry>
     </collision>
-    <!-- mass measured with screws -->
     <inertial>
       <origin rpy="0 1.5707963267948966 0" xyz="0 0 0.025"/>
       <mass value="0.05267"/>
-      <!-- ./cylinder_inertia.py 0.05267 0.025 0.09 -->
-      <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyx="0" iyy="4.37819375e-05" iyz="0" izx="0" izy="0" izz="1.6459375e-05"/>
+      <inertia ixx="4.37819375e-05" ixy="0" ixz="0" iyy="4.37819375e-05" iyz="0" izz="1.6459375000000005e-05"/>
     </inertial>
   </link>
   <joint name="left_knee_horn_fix" type="fixed">
