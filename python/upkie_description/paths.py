@@ -11,16 +11,16 @@ Paths to the URDF description for the Upkie wheeled biped.
 import os
 
 # Path to upkie_description
-path = os.path.dirname(os.path.realpath(__file__))
+PATH = os.path.dirname(os.path.realpath(__file__))
 
 # Path to the meshes folder
-meshes_path = os.path.join(path, "meshes")
+MESHES_PATH = os.path.join(PATH, "meshes")
 
 # Path to the robot's URDF
-urdf_path = os.path.join(path, "urdf", "upkie.urdf")
+URDF_PATH = os.path.join(PATH, "urdf", "upkie.urdf")
 
 __all__ = [
-    "meshes_path",
-    "path",
-    "urdf_path",
+    "MESHES_PATH",
+    "PATH",
+    "URDF_PATH",
 ]

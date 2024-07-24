@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- python: Uppercase paths (consistent with ``robot_descriptions``)
+
 ## [1.6.0] - 2024-07-05
 
 ### Added
