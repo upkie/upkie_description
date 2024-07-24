@@ -437,12 +437,10 @@
             </geometry>
         </collision>
         <!-- mass measured with screws -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0.002 0.0275" />
-            <mass value="0.07863" />
-            <!-- ./box_inertia.py 0.07863 0.092 0.068 0.056 -->
-            <inertia ixx="5.084740000000001e-05" ixy="0" ixz="0" iyx="0" iyy="7.6009e-05" iyz="0" izx="0" izy="0" izz="8.575912e-05" />
-        </inertial>
+        <xacro:box_inertia
+            rpy="0 0 0" xyz="0 0.002 0.0275"
+            mass="0.07863"
+            len_x="0.092" len_y="0.068" len_z="0.056" />
     </link>
 
     <joint name="left_ankle_base_fix" type="fixed">
@@ -464,11 +462,10 @@
             </geometry>
         </collision>
         <!-- mass is a pure guess (^_^") -->
-        <inertial>
-            <mass value="0.02" />
-            <!-- ./box_inertia.py 0.02 0.09 0.046 0.004 -->
-            <inertia ixx="3.5533333333333333e-06" ixy="0" ixz="0" iyx="0" iyy="1.3526666666666667e-05" iyz="0" izx="0" izy="0" izz="1.7026666666666667e-05" />
-        </inertial>
+        <xacro:box_inertia
+            rpy="0 0 0" xyz="0 0 0"
+            mass="0.02"
+            len_x="0.09" len_y="0.046" len_z="0.004" />
     </link>
 
     <joint name="left_ankle_plate_fix" type="fixed">
@@ -930,12 +927,10 @@
             </geometry>
         </collision>
         <!-- mass measured with screws -->
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0.002 0.0275" />
-            <mass value="0.07863" />
-            <!-- ./box_inertia.py 0.07863 0.092 0.068 0.056 -->
-            <inertia ixx="5.084740000000001e-05" ixy="0" ixz="0" iyx="0" iyy="7.6009e-05" iyz="0" izx="0" izy="0" izz="8.575912e-05" />
-        </inertial>
+        <xacro:box_inertia
+            rpy="0 0 0" xyz="0 0.002 0.0275"
+            mass="0.07863"
+            len_x="0.092" len_y="0.068" len_z="0.056" />
     </link>
 
     <joint name="right_ankle_base_fix" type="fixed">
@@ -957,11 +952,10 @@
             </geometry>
         </collision>
         <!-- mass is a pure guess (^_^") -->
-        <inertial>
-            <mass value="0.02" />
-            <!-- ./box_inertia.py 0.02 0.09 0.046 0.004 -->
-            <inertia ixx="3.5533333333333333e-06" ixy="0" ixz="0" iyx="0" iyy="1.3526666666666667e-05" iyz="0" izx="0" izy="0" izz="1.7026666666666667e-05" />
-        </inertial>
+        <xacro:box_inertia
+            rpy="0 0 0" xyz="0 0 0"
+            mass="0.02"
+            len_x="0.09" len_y="0.046" len_z="0.004" />
     </link>
 
     <joint name="right_ankle_plate_fix" type="fixed">
