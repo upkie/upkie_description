@@ -4,7 +4,9 @@
 <!-- Copyright 2023 Inria -->
 <!-- This file was generated from upkie.xacro -->
 <!-- Conventions in this file are detailed in: https://github.com/upkie/upkie_description/wiki/ -->
-<robot name="upkie">
+<robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:include filename="xacro/box_inertia.xacro" />
 
     <material name="black">
         <color rgba="0.1 0.1 0.1 1" />
@@ -85,12 +87,8 @@
                 <box size="0.125 0.17 0.25" />
             </geometry>
         </collision>
-        <inertial>
-            <!-- torso mass evaluated as net mass (5.4 [kg]) minus everything else -->
-            <mass value="1.0" />
-            <!-- ./box_inertia.py 1.0 0.125 0.17 0.25 -->
-            <inertia ixx="0.007616666666666667" ixy="0" ixz="0" iyx="0" iyy="0.006510416666666666" iyz="0" izx="0" izy="0" izz="0.0037104166666666674" />
-        </inertial>
+        <!-- torso mass evaluated as net mass (5.4 [kg]) minus everything else -->
+        <xacro:box_inertia mass="1" len_x="0.125" len_y="0.17" len_z="0.25" />
     </link>
 
     <joint name="torso_fix" type="fixed">
