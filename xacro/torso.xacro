@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">
-    <xacro:macro name="torso" params="with_camera with_handle">
+    <xacro:macro name="torso" params="with_handle">
         <!-- Torso -->
 
         <link name="torso">
