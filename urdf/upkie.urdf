@@ -387,12 +387,10 @@
         <box size="0.092 0.068 0.056"/>
       </geometry>
     </collision>
-    <!-- mass measured with screws -->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0.002 0.0275"/>
       <mass value="0.07863"/>
-      <!-- ./box_inertia.py 0.07863 0.092 0.068 0.056 -->
-      <inertia ixx="5.084740000000001e-05" ixy="0" ixz="0" iyx="0" iyy="7.6009e-05" iyz="0" izx="0" izy="0" izz="8.575912e-05"/>
+      <inertia ixx="5.084740000000002e-05" ixy="0" ixz="0" iyy="7.6009e-05" iyz="0" izz="8.575912e-05"/>
     </inertial>
   </link>
   <joint name="left_ankle_base_fix" type="fixed">
@@ -412,11 +410,10 @@
         <box size="0.09 0.046 0.004"/>
       </geometry>
     </collision>
-    <!-- mass is a pure guess (^_^") -->
     <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.02"/>
-      <!-- ./box_inertia.py 0.02 0.09 0.046 0.004 -->
-      <inertia ixx="3.5533333333333333e-06" ixy="0" ixz="0" iyx="0" iyy="1.3526666666666667e-05" iyz="0" izx="0" izy="0" izz="1.7026666666666667e-05"/>
+      <inertia ixx="3.5533333333333333e-06" ixy="0" ixz="0" iyy="1.3526666666666667e-05" iyz="0" izz="1.7026666666666667e-05"/>
     </inertial>
   </link>
   <joint name="left_ankle_plate_fix" type="fixed">
@@ -837,12 +834,10 @@
         <box size="0.092 0.068 0.056"/>
       </geometry>
     </collision>
-    <!-- mass measured with screws -->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0.002 0.0275"/>
       <mass value="0.07863"/>
-      <!-- ./box_inertia.py 0.07863 0.092 0.068 0.056 -->
-      <inertia ixx="5.084740000000001e-05" ixy="0" ixz="0" iyx="0" iyy="7.6009e-05" iyz="0" izx="0" izy="0" izz="8.575912e-05"/>
+      <inertia ixx="5.084740000000002e-05" ixy="0" ixz="0" iyy="7.6009e-05" iyz="0" izz="8.575912e-05"/>
     </inertial>
   </link>
   <joint name="right_ankle_base_fix" type="fixed">
@@ -862,11 +857,10 @@
         <box size="0.09 0.046 0.004"/>
       </geometry>
     </collision>
-    <!-- mass is a pure guess (^_^") -->
     <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.02"/>
-      <!-- ./box_inertia.py 0.02 0.09 0.046 0.004 -->
-      <inertia ixx="3.5533333333333333e-06" ixy="0" ixz="0" iyx="0" iyy="1.3526666666666667e-05" iyz="0" izx="0" izy="0" izz="1.7026666666666667e-05"/>
+      <inertia ixx="3.5533333333333333e-06" ixy="0" ixz="0" iyy="1.3526666666666667e-05" iyz="0" izz="1.7026666666666667e-05"/>
     </inertial>
   </link>
   <joint name="right_ankle_plate_fix" type="fixed">
