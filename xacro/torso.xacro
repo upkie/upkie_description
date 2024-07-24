@@ -29,6 +29,25 @@
             <child link="torso" />
         </joint>
 
+        <!-- IMU -->
+
+        <link name="imu">
+            <!-- virtual link -->
+            <inertial>
+                <!-- mass should not be zero [1] -->
+                <mass value="0.001" />
+                <origin rpy="0 0 0" xyz="0 0 0" />
+                <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+            </inertial>
+        </link>
+
+        <joint name="imu_fix" type="fixed">
+            <!-- not that the origin frame is not translated -->
+            <origin rpy="3.141592653589793 0 3.141592653589793" xyz="0 0 0" />
+            <parent link="torso" />
+            <child link="imu" />
+        </joint>
+
         <!-- Battery -->
 
         <link name="battery">
