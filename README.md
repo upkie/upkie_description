@@ -7,7 +7,7 @@
 [![Conda version](https://img.shields.io/conda/vn/conda-forge/upkie_description.svg)](https://anaconda.org/conda-forge/upkie_description)
 [![PyPI version](https://img.shields.io/pypi/v/upkie_description)](https://pypi.org/project/upkie_description/)
 
-URDF description for the [Upkie](https://hackaday.io/project/185729-upkie-wheeled-biped-robot) wheeled biped.
+URDF description for [Upkie](https://github.com/upkie/upkie) wheeled bipeds.
 
 ## Python module
 
