@@ -1,4 +1,4 @@
-name: PyPI
+name: Packaging
 
 on:
     push:
