@@ -21,7 +21,7 @@ Conventions in this file are detailed in:
     <xacro:include filename="xacro/right_leg.xacro" />
     <xacro:include filename="xacro/torso.xacro" />
 
-    <xacro:torso with_camera="false" with_handle="true" />
+    <xacro:torso with_camera="true" with_handle="false" />
     <xacro:left_leg />
     <xacro:right_leg />
 </robot>
