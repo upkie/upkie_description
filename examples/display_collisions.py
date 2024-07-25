@@ -17,10 +17,10 @@ from pinocchio.visualize import MeshcatVisualizer
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("variant", help="variant to load, e.g. \"camera\"")
+    parser.add_argument("variant", default="", nargs="?")
     args = parser.parse_args()
 
-    robot = upkie_description.load_in_pinocchio(variant=args.variant or "")
+    robot = upkie_description.load_in_pinocchio(variant=args.variant)
     robot.setVisualizer(MeshcatVisualizer())
     robot.initViewer(open=True)
     robot.loadViewerModel(collision_color=(1.0, 0.0, 0.0, 0.3))
