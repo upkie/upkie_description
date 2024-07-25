@@ -4,9 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Camera variant of the URDF
+- python: Add "variant" keyword argument to `load_in_pinocchio`
+
 ### Changed
 
-- python: Uppercase paths (consistent with ``robot_descriptions``)
+- Refactor the URDF generation process using Xacro and `xacrodoc`
+- python: Uppercase paths for consistency with `robot_descriptions.py`
 
 ## [1.6.0] - 2024-07-05
 
