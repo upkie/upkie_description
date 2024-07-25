@@ -79,7 +79,7 @@
             <link name="handle">
                 <visual>
                     <geometry>
-                        <mesh filename="package://upkie_description/meshes/handle.stl" />
+                        <mesh filename="package://upkie_description/meshes/add-ons/handle.stl" />
                     </geometry>
                     <material name="terracotta_light" />
                 </visual>
