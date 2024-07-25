@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [2.0.0] - 2024-07-25
+
 ### Added
 
 - CICD: Add changelog workflow
@@ -13,8 +15,8 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- **Breaking:** Uppercase paths in Python for consistency with `robot_descriptions.py`
 - Refactor the URDF generation process using Xacro and `xacrodoc`
-- python: Uppercase paths for consistency with `robot_descriptions.py`
 
 ## [1.6.0] - 2024-07-05
 
@@ -120,7 +122,8 @@ Initial robot description.
 - Robot description (kinematics, inertias, collisions) in URDF
 - Scripts to compute box and cylinder inertias
 
-[unreleased]: https://github.com/upkie/upkie_description/compare/v1.6.0...HEAD
+[unreleased]: https://github.com/upkie/upkie_description/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/upkie/upkie_description/compare/v1.6.0...v2.0.0
 [1.6.0]: https://github.com/upkie/upkie_description/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/upkie/upkie_description/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/upkie/upkie_description/compare/v1.3.0...v1.4.0
