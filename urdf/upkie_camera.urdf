@@ -116,7 +116,7 @@ Conventions in this file are detailed in:
   <link name="camera_support">
     <visual>
       <geometry>
-        <mesh filename="package://upkie_description/meshes/camera_support.stl"/>
+        <mesh filename="package://upkie_description/meshes/add-ons/camera_support.stl"/>
       </geometry>
       <material name="terracotta_light"/>
     </visual>
