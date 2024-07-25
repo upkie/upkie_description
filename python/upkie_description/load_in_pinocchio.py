@@ -12,8 +12,7 @@ from typing import Optional, Union
 
 import pinocchio as pin
 
-from .paths import path as package_path
-from .paths import urdf_path
+from .paths import PATH
 
 PinocchioJoint = Union[
     pin.JointModelRX,
