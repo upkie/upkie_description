@@ -28,7 +28,7 @@ jobs:
 
             - name: "Lint Python code"
               run: |
-                  tox -e lint
+                  cd ${GITHUB_WORKSPACE}/python && tox -e lint
               env:
                   PLATFORM: ubuntu-latest
 
