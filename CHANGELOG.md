@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- CICD: Add Python workflow
+
 ## [2.0.0] - 2024-07-25
 
 ### Added
