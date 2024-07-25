@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">
-    <xacro:macro name="torso" params="with_handle">
+    <xacro:macro name="torso" params="with_camera with_handle">
         <link name="base">
             <xacro:virtual_link_inertia />
         </link>
@@ -72,6 +72,36 @@
             <parent link="torso" />
             <child link="battery" />
         </joint>
+
+        <xacro:if value="${with_camera}">
+            <!-- Camera -->
+
+            <link name="camera_support">
+                <visual>
+                    <geometry>
+                        <mesh filename="package://upkie_description/meshes/add-ons/camera_support.stl" />
+                    </geometry>
+                    <material name="terracotta_light" />
+                </visual>
+                <collision>
+                    <origin rpy="0 0 0" xyz="0 0 0" />
+                    <geometry>
+                        <box size="0.11 0.12 0.07" />
+                    </geometry>
+                </collision>
+                <!-- mass NOT MEASURED YET -->
+                <xacro:box_inertia
+                    rpy="0 0 0" xyz="0 0 0"
+                    mass="1.0"
+                    len_x="0.120" len_y="0.07" len_z="0.04" />
+            </link>
+
+            <joint name="camera_support_fix" type="fixed">
+                <origin rpy="0 0 0" xyz="0 0 0.16" />
+                <parent link="torso" />
+                <child link="camera_support" />
+            </joint>
+        </xacro:if>
 
         <xacro:if value="${with_handle}">
             <!-- Handle -->

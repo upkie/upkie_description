@@ -32,6 +32,7 @@ PinocchioJoint = Union[
 
 def load_in_pinocchio(
     root_joint: Optional[PinocchioJoint] = None,
+    with_camera: bool = False,
 ) -> pin.RobotWrapper:
     """Load Upkie's description in Pinocchio.
 
@@ -39,13 +40,16 @@ def load_in_pinocchio(
         root_joint (optional): First joint of the kinematic chain, for example
             a free flyer between the floating base of a mobile robot and an
             inertial frame. Defaults to no joint, i.e., a fixed base.
+        with_camera (optional): Load the camera variant of Upkie.
 
     Returns:
         Robot model for Pinocchio.
     """
+    filename = "upkie_camera.urdf" if with_camera else "upkie.urdf"
+    urdf_path = os.path.join(PATH, "urdf", filename)
     robot = pin.RobotWrapper.BuildFromURDF(
         filename=urdf_path,
-        package_dirs=[package_path, os.path.dirname(package_path)],
+        package_dirs=[PATH, os.path.dirname(PATH)],
         root_joint=root_joint,
     )
     return robot
