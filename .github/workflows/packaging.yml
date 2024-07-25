@@ -59,6 +59,9 @@ jobs:
         name: "Install from source"
         runs-on: ubuntu-latest
         steps:
+            - name: "Checkout sources"
+              uses: actions/checkout@v3
+
             - name: "Install Conda environment with Micromamba"
               uses: mamba-org/setup-micromamba@v1
               with:
@@ -70,11 +73,11 @@ jobs:
 
             - name: "Copy meshes and urdf to local Python directory"
               run: |
-                  cp -r meshes ./python/upkie_description
-                  cp -r urdf ./python/upkie_description
+                  cp -r meshes ${GITHUB_WORKSPACE}/python/upkie_description
+                  cp -r urdf ${GITHUB_WORKSPACE}/python/upkie_description
 
             - name: "Install package from source"
-              run: python -m pip install ./python
+              run: python -m pip install ${GITHUB_WORKSPACE}/python
 
             - name: "Test module import"
               run: python -c "import upkie_description"
