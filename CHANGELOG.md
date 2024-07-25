@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- CICD: Add changelog workflow
+- CICD: Add packaging workflow
 - Camera variant of the URDF
 - python: Add "variant" keyword argument to `load_in_pinocchio`
 
