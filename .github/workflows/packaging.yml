@@ -31,10 +31,6 @@ jobs:
         name: "Install from PyPI"
         runs-on: ubuntu-latest
         steps:
-            - name: "Install dependencies"
-              run: |
-                  python -m pip install --upgrade pip
-
             - name: "Install Conda environment with Micromamba"
               uses: mamba-org/setup-micromamba@v1
               with:
@@ -43,6 +39,7 @@ jobs:
                   create-args: >-
                       python=3.10
                       pinocchio
+                      pip
 
             - name: "Install package from PyPI"
               run: python -m pip install upkie_description
@@ -57,10 +54,6 @@ jobs:
         name: "Install from TestPyPI"
         runs-on: ubuntu-latest
         steps:
-            - name: "Install dependencies"
-              run: |
-                  python -m pip install --upgrade pip
-
             - name: "Install Conda environment with Micromamba"
               uses: mamba-org/setup-micromamba@v1
               with:
@@ -69,6 +62,7 @@ jobs:
                   create-args: >-
                       python=3.10
                       pinocchio
+                      pip
 
             - name: "Install package from TestPyPI"
               run: python -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ upkie
