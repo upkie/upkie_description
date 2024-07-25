@@ -39,25 +39,21 @@ The module also provides the following paths:
 
 <dl>
     <dt>
-        <code>upkie_description.path</code>
+        <code>upkie_description.PATH</code>
     </dt>
     <dd>
         Path to the "upkie_description" folder itself.
     </dd>
     <dt>
-        <code>upkie_description.meshes_path</code>
+        <code>upkie_description.MESHES_PATH</code>
     </dt>
     <dd>
         Path to the "meshes" folder.
     </dd>
     <dt>
-        <code>upkie_description.urdf_path</code>
+        <code>upkie_description.URDF_PATH</code>
     </dt>
     <dd>
         Path to the URDF file of the model.
     </dd>
 </dl>
-
-## Acknowledgements
-
-Upkie's torso derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
