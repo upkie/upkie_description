@@ -107,7 +107,7 @@
 	      <geometry>
 		<box size="0.0175 0.091 0.028"/> 
 	      </geometry>
-	      <material name="light_gray"/>
+	      <material name="black"/>
 	    </visual>
 	    <collision>
 	      <origin rpy="0 0 0" xyz="0 0 0"/>
