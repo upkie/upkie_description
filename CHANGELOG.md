@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Add ``--variant`` keyword argument to all examples
 - CICD: Add Python workflow
 
 ## [2.0.0] - 2024-07-25

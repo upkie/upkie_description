@@ -8,16 +8,19 @@
 Display the robot description along and its collision meshes.
 """
 
+import argparse
 import time
 
-import argparse
-import upkie_description
 from pinocchio.visualize import MeshcatVisualizer
 
+import upkie_description
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("variant", default="", nargs="?")
+    parser.add_argument(
+        "--variant",
+        help="variant of the robot description to load",
+    )
     args = parser.parse_args()
 
     robot = upkie_description.load_in_pinocchio(variant=args.variant)

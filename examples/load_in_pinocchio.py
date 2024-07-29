@@ -6,10 +6,22 @@
 
 """Load Upkie in Pinocchio."""
 
+import argparse
+
 import upkie_description
 
 if __name__ == "__main__":
-    print("Loading robot in Pinocchio...")
-    robot = upkie_description.load_in_pinocchio()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--variant",
+        help="variant of the robot description to load",
+    )
+    args = parser.parse_args()
+
+    label = "robot"
+    if args.variant:
+        label = f"'{args.variant}' variant of the robot"
+    print(f"Loading {label} in Pinocchio...")
+    robot = upkie_description.load_in_pinocchio(variant=args.variant)
     print(f"{robot=}")
     print("Run this example with ``python -i`` to interact with it")

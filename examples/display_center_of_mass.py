@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2024 Inria
 
+import argparse
 import time
 
 import meshcat_shapes
@@ -14,11 +15,19 @@ from pinocchio.visualize import MeshcatVisualizer
 import upkie_description
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--variant",
+        help="variant of the robot description to load",
+    )
+    args = parser.parse_args()
+
     robot = upkie_description.load_in_pinocchio(
         # NB: we want a free-flyer in this example, otherwise the torso will be
         # attached to the "universe" frame and its mass will not be counted in
         # pin.computeTotalMass and pin.centerOfMass calculations
-        root_joint=pin.JointModelFreeFlyer()
+        root_joint=pin.JointModelFreeFlyer(),
+        variant=args.variant,
     )
 
     robot.setVisualizer(MeshcatVisualizer())

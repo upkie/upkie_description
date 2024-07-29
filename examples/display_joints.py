@@ -14,19 +14,28 @@ This example relies on the following dependencies:
 - `Pinocchio <https://github.com/stack-of-tasks/pinocchio>`_
 """
 
+import argparse
 import time
 
 import meshcat_shapes
 import numpy as np
 import pinocchio as pin
-import upkie_description
 from meshcat import transformations
 from pinocchio.visualize import MeshcatVisualizer
+
+import upkie_description
 
 FRAME_SCALE = 1.0
 
 if __name__ == "__main__":
-    robot = upkie_description.load_in_pinocchio()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--variant",
+        help="variant of the robot description to load",
+    )
+    args = parser.parse_args()
+
+    robot = upkie_description.load_in_pinocchio(variant=args.variant)
     robot.setVisualizer(MeshcatVisualizer())
     robot.initViewer(open=True)
     robot.loadViewerModel(color=[1.0, 1.0, 1.0, 0.3])

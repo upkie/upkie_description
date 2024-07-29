@@ -19,14 +19,19 @@ import time
 
 import meshcat_shapes
 import numpy as np
-import upkie_description
 from meshcat import transformations
 from pinocchio.visualize import MeshcatVisualizer
+
+import upkie_description
 
 FRAME_SCALE = 1.0
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--variant",
+        help="variant of the robot description to load",
+    )
     parser.add_argument(
         "--filter",
         help="only display frames whose names contain a given string",
@@ -37,7 +42,7 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    robot = upkie_description.load_in_pinocchio()
+    robot = upkie_description.load_in_pinocchio(variant=args.variant)
     robot.setVisualizer(MeshcatVisualizer())
     robot.initViewer(open=True)
     robot.loadViewerModel(color=[1.0, 1.0, 1.0, 0.3])
@@ -68,7 +73,9 @@ if __name__ == "__main__":
         )
         Rx = transformations.rotation_matrix(0.5 * np.pi, [1.0, 0.0, 0.0])
         Rz = transformations.rotation_matrix(0.5 * np.pi, [0.0, 0.0, 1.0])
-        trans = transformations.translation_matrix([0.0, 0.0, 0.005 * FRAME_SCALE])
+        trans = transformations.translation_matrix(
+            [0.0, 0.0, 0.005 * FRAME_SCALE]
+        )
         handle["text"].set_transform(trans @ Rz @ Rx)
 
     time.sleep(1.0)  # avoid terminating too fast
