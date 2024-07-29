@@ -5,7 +5,7 @@
 # Copyright 2022 Stéphane Caron
 
 """
-Paths to the URDF description for the Upkie wheeled biped.
+Paths to the URDF package and main description for Upkie wheeled bipeds.
 """
 
 import os
