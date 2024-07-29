@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 - Camera variant of the URDF
 - python: Add "variant" keyword argument to `load_in_pinocchio`
 - Added camera support mass and camera to the "camera" variant
+
 ### Changed
 
 - **Breaking:** Uppercase paths in Python for consistency with `robot_descriptions.py`
