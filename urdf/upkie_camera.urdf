@@ -142,7 +142,7 @@ Conventions in this file are detailed in:
       <geometry>
         <box size="0.0175 0.091 0.028"/>
       </geometry>
-      <material name="light_grey"/>
+      <material name="light_gray"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -152,11 +152,8 @@ Conventions in this file are detailed in:
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
-      <inertial>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <mass value="0.061"/>
-        <inertia ixx="4.6080416666666663e-05" ixy="0" ixz="0" iyy="5.542104166666667e-06" iyz="0" izz="4.3651854166666664e-05"/>
-      </inertial>
+      <mass value="0.061"/>
+      <inertia ixx="4.6080416666666663e-05" ixy="0" ixz="0" iyy="5.542104166666667e-06" iyz="0" izz="4.3651854166666664e-05"/>
     </inertial>
   </link>
   <joint name="camera_fix" type="fixed">

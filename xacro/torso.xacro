@@ -107,7 +107,7 @@
 	      <geometry>
 		<box size="0.0175 0.091 0.028"/> 
 	      </geometry>
-	      <material name="light_grey"/>
+	      <material name="light_gray"/>
 	    </visual>
 	    <collision>
 	      <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -115,13 +115,10 @@
 		<box size="0.0175 0.091 0.028"/> 
 	      </geometry>
 	    </collision>
-	    <inertial>
-	      <origin rpy="0 0 0" xyz="0 0 0"/>
 	      <xacro:box_inertia
                     rpy="0 0 0" xyz="0 0 0"
                     mass="0.061"
                     len_x="0.0175" len_y="0.091" len_z="0.028" />
-	    </inertial>
 	  </link>
 	  <joint name="camera_fix" type="fixed">
 	    <origin rpy="0 0 0" xyz="0.045 0 0"/>
