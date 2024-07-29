@@ -171,7 +171,7 @@ Conventions in this file are detailed in:
     </inertial>
   </link>
   <joint name="camera_eye_fix" type="fixed">
-    <origin rpy="0 0 0" xyz="0.00875 0 0.005"/>
+    <origin rpy="0 0 0" xyz="-0.045 0 0.005"/>
     <parent link="camera"/>
     <child link="camera_eye"/>
   </joint>
