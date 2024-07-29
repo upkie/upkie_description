@@ -89,10 +89,10 @@
                         <box size="0.11 0.12 0.07" />
                     </geometry>
                 </collision>
-                <!-- mass NOT MEASURED YET -->
+                <!-- mass measured with USB cable -->
                 <xacro:box_inertia
                     rpy="0 0 0" xyz="0 0 0"
-                    mass="1.0"
+                    mass="0.167"
                     len_x="0.120" len_y="0.07" len_z="0.04" />
             </link>
 
@@ -101,6 +101,30 @@
                 <parent link="torso" />
                 <child link="camera_support" />
             </joint>
+            
+            <link name="camera">
+	    <visual>
+	      <geometry>
+		<box size="0.0175 0.091 0.028"/> 
+	      </geometry>
+	      <material name="black"/>
+	    </visual>
+	    <collision>
+	      <origin rpy="0 0 0" xyz="0 0 0"/>
+	      <geometry>
+		<box size="0.0175 0.091 0.028"/> 
+	      </geometry>
+	    </collision>
+	      <xacro:box_inertia
+                    rpy="0 0 0" xyz="0 0 0"
+                    mass="0.061"
+                    len_x="0.0175" len_y="0.091" len_z="0.028" />
+	  </link>
+	  <joint name="camera_fix" type="fixed">
+	    <origin rpy="0 0 0" xyz="0.045 0 0"/>
+	    <parent link="camera_support"/>
+	    <child link="camera"/>
+	  </joint>
         </xacro:if>
 
         <xacro:if value="${with_handle}">
