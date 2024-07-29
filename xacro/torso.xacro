@@ -89,10 +89,10 @@
                         <box size="0.11 0.12 0.07" />
                     </geometry>
                 </collision>
-                <!-- mass NOT MEASURED YET -->
+                <!-- mass measured with USB cable -->
                 <xacro:box_inertia
                     rpy="0 0 0" xyz="0 0 0"
-                    mass="1.0"
+                    mass="0.167"
                     len_x="0.120" len_y="0.07" len_z="0.04" />
             </link>
 
@@ -103,30 +103,31 @@
             </joint>
             
             <link name="camera">
-                <visual>
-                    <geometry>
-                        <mesh filename="package://upkie_description/meshes/add-ons/oakd_lite.stl" />
-                    </geometry>
-                    <material name="terracotta_light" />
-                </visual>
-                <collision>
-                    <origin rpy="0 0 0" xyz="0 0 0" />
-                    <geometry>
-                        <box size="0.11 0.12 0.07" />
-                    </geometry>
-                </collision>
-                <!-- mass NOT MEASURED YET -->
-                <xacro:box_inertia
+	    <visual>
+	      <geometry>
+		<box size="0.0175 0.091 0.028"/> 
+	      </geometry>
+	      <material name="light_grey"/>
+	    </visual>
+	    <collision>
+	      <origin rpy="0 0 0" xyz="0 0 0"/>
+	      <geometry>
+		<box size="0.0175 0.091 0.028"/> 
+	      </geometry>
+	    </collision>
+	    <inertial>
+	      <origin rpy="0 0 0" xyz="0 0 0"/>
+	      <xacro:box_inertia
                     rpy="0 0 0" xyz="0 0 0"
-                    mass="1.0"
-                    len_x="0.120" len_y="0.07" len_z="0.04" />
-            </link>
-
-            <joint name="camera_fix" type="fixed">
-                <origin rpy="0 0 0" xyz="0 0 0.16" />
-                <parent link="camera_support" />
-                <child link="camera" />
-            </joint>
+                    mass="0.061"
+                    len_x="0.0175" len_y="0.091" len_z="0.028" />
+	    </inertial>
+	  </link>
+	  <joint name="camera_fix" type="fixed">
+	    <origin rpy="0 0 0" xyz="0.045 0 0"/>
+	    <parent link="camera_support"/>
+	    <child link="camera"/>
+	  </joint>
         </xacro:if>
 
         <xacro:if value="${with_handle}">
