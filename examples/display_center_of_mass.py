@@ -4,15 +4,18 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2024 Inria
 
+"""
+Display the center of mass and visual model of the robot.
+"""
+
 import argparse
 import time
 
 import meshcat_shapes
 import pinocchio as pin
+import upkie_description
 from meshcat import transformations
 from pinocchio.visualize import MeshcatVisualizer
-
-import upkie_description
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
