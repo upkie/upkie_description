@@ -8,7 +8,7 @@ Copyright 2023 Inria
 This file was generated from `upkie.xacro`.
 
 Conventions in this file are detailed in:
-    https://github.com/upkie/upkie_description/wiki/
+https://github.com/upkie/upkie_description/wiki/Model-conventions/
 
 -->
 <robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">
@@ -25,13 +25,3 @@ Conventions in this file are detailed in:
     <xacro:left_leg />
     <xacro:right_leg />
 </robot>
-<!--
-
-Footnotes:
-
-[1] Setting the mass of a virtual link to zero prevents the base link from
-free-floating in Bullet. Since our description does not account for screws and
-cables anyway, the additional 1 gram per virtual link should not make a
-significant difference.
-
--->
