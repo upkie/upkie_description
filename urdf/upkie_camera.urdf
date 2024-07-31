@@ -161,6 +161,26 @@ Conventions in this file are detailed in:
     <parent link="camera_support"/>
     <child link="camera"/>
   </joint>
+  <link name="camera_eye">
+    <!-- virtual link -->
+    <inertial>
+      <!-- mass should not be zero [1] -->
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+  <joint name="camera_eye_fix" type="fixed">
+    <origin rpy="0 0 0" xyz="0.00875 0 0.005"/>
+    <parent link="camera"/>
+    <child link="camera_eye"/>
+  </joint>
   <!-- Left leg -->
   <!-- Left hip -->
   <link name="left_hip_qdd100_stator">
