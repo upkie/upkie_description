@@ -170,19 +170,17 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions/
     <child link="camera"/>
   </joint>
   <link name="camera_eye">
-    <!-- virtual link -->
-    <inertial>
-      <!-- mass should not be zero [1] -->
-      <mass value="0.001"/>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-    </inertial>
+    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
     <visual>
       <geometry>
         <box size="0 0 0"/>
       </geometry>
-      <material name="black"/>
     </visual>
+    <inertial>
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
   </link>
   <joint name="camera_eye_fix" type="fixed">
     <origin rpy="0 0 0" xyz="0.00875 0 0.005"/>
