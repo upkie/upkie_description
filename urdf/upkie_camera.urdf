@@ -40,9 +40,13 @@ Conventions in this file are detailed in:
     <color rgba="0.93 0.64 0.52 0.8"/>
   </material>
   <link name="base">
-    <!-- virtual link -->
+    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+    </visual>
     <inertial>
-      <!-- mass should not be zero [1] -->
       <mass value="0.001"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
@@ -74,9 +78,13 @@ Conventions in this file are detailed in:
   </joint>
   <!-- IMU -->
   <link name="imu">
-    <!-- virtual link -->
+    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+    </visual>
     <inertial>
-      <!-- mass should not be zero [1] -->
       <mass value="0.001"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
@@ -481,9 +489,13 @@ Conventions in this file are detailed in:
     <origin rpy="3.141592653589793 0 0" xyz="0 0 -0.0015"/>
   </joint>
   <link name="left_anchor">
-    <!-- virtual link -->
+    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+    </visual>
     <inertial>
-      <!-- mass should not be zero [1] -->
       <mass value="0.001"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
@@ -576,9 +588,13 @@ Conventions in this file are detailed in:
     <origin rpy="0 0 0" xyz="0 0 0.0209"/>
   </joint>
   <link name="left_contact">
-    <!-- virtual link -->
+    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+    </visual>
     <inertial>
-      <!-- mass should not be zero [1] -->
       <mass value="0.001"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
@@ -592,9 +608,13 @@ Conventions in this file are detailed in:
     <origin rpy="1.5707963267948966 0 0" xyz="0 0.047 0"/>
   </joint>
   <link name="left_wheel_center">
-    <!-- virtual link -->
+    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+    </visual>
     <inertial>
-      <!-- mass should not be zero [1] -->
       <mass value="0.001"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
@@ -905,9 +925,13 @@ Conventions in this file are detailed in:
     <origin rpy="3.141592653589793 0 0" xyz="0 0 -0.0015"/>
   </joint>
   <link name="right_anchor">
-    <!-- virtual link -->
+    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+    </visual>
     <inertial>
-      <!-- mass should not be zero [1] -->
       <mass value="0.001"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
@@ -1000,9 +1024,13 @@ Conventions in this file are detailed in:
     <origin rpy="0 0 0" xyz="0 0 0.0209"/>
   </joint>
   <link name="right_contact">
-    <!-- virtual link -->
+    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+    </visual>
     <inertial>
-      <!-- mass should not be zero [1] -->
       <mass value="0.001"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
@@ -1016,9 +1044,13 @@ Conventions in this file are detailed in:
     <origin rpy="1.5707963267948966 0 0" xyz="0 0.047 0"/>
   </joint>
   <link name="right_wheel_center">
-    <!-- virtual link -->
+    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+    </visual>
     <inertial>
-      <!-- mass should not be zero [1] -->
       <mass value="0.001"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
