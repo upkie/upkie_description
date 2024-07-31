@@ -331,9 +331,7 @@
             <origin rpy="3.141592653589793 0 0" xyz="0 0 -0.0015" />
         </joint>
 
-        <link name="left_anchor">
-            <xacro:virtual_link_inertia />
-        </link>
+        <xacro:virtual_link name="left_anchor" />
 
         <joint name="left_anchor_fix" type="fixed">
             <parent link="left_ankle_mj5208_stator" />
@@ -429,9 +427,7 @@
             <origin rpy="0 0 0" xyz="0 0 0.0209" />
         </joint>
 
-        <link name="left_contact">
-            <xacro:virtual_link_inertia />
-        </link>
+        <xacro:virtual_link name="left_contact" />
 
         <joint name="left_contact_fix" type="fixed">
             <parent link="left_wheel_tire" />
@@ -441,9 +437,7 @@
             <origin rpy="1.5707963267948966 0 0" xyz="0 0.047 0" />
         </joint>
 
-        <link name="left_wheel_center">
-            <xacro:virtual_link_inertia />
-        </link>
+        <xacro:virtual_link name="left_wheel_center" />
 
         <joint name="left_wheel_center_fix" type="fixed">
             <parent link="left_wheel_tire" />

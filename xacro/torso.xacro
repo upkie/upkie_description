@@ -2,9 +2,7 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">
     <xacro:macro name="torso" params="with_camera with_handle">
-        <link name="base">
-            <xacro:virtual_link_inertia />
-        </link>
+        <xacro:virtual_link name="base" />
 
         <!-- Torso -->
 
@@ -35,9 +33,7 @@
 
         <!-- IMU -->
 
-        <link name="imu">
-            <xacro:virtual_link_inertia />
-        </link>
+        <xacro:virtual_link name="imu" />
 
         <joint name="imu_fix" type="fixed">
             <!-- not that the origin frame is not translated -->

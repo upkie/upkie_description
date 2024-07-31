@@ -15,7 +15,7 @@ Conventions in this file are detailed in:
     <xacro:include filename="xacro/utils/box_inertia.xacro" />
     <xacro:include filename="xacro/utils/cylinder_inertia.xacro" />
     <xacro:include filename="xacro/utils/materials.xacro" />
-    <xacro:include filename="xacro/utils/virtual_link_inertia.xacro" />
+    <xacro:include filename="xacro/utils/virtual_link.xacro" />
 
     <xacro:include filename="xacro/left_leg.xacro" />
     <xacro:include filename="xacro/right_leg.xacro" />
