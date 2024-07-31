@@ -127,12 +127,18 @@
     </joint>
     <link name="camera_eye">
         <xacro:virtual_link_inertia />
-    </link>
-    <joint name="camera_eye_fix" type="fixed">
-        <origin rpy="0 0 0" xyz="-0.045 0 0.005"/>
-        <parent link="camera"/>
-        <child link="camera_eye"/>
-    </joint>
+    <visual>
+      <geometry>
+        <box size="0 0 0"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+  <joint name="camera_eye_fix" type="fixed">
+    <origin rpy="0 0 0" xyz="0.00875 0 0.005"/>
+    <parent link="camera"/>
+    <child link="camera_eye"/>
+  </joint>
         </xacro:if>
 
         <xacro:if value="${with_handle}">
