@@ -8,6 +8,15 @@ All notable changes to this project will be documented in this file.
 
 - Add ``--variant`` keyword argument to all examples
 - CICD: Add Python workflow
+- Add an empty visual box to each virtual link
+
+### Changed
+
+- Replace the `virtual_link_inertia` Xacro macro by `virtual_link`
+
+### Fixed
+
+- Rendering of the IMU frame orientation in MeshCat
 
 ## [2.0.0] - 2024-07-25
 
