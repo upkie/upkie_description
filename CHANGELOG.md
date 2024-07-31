@@ -4,11 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [2.1.0] - 2024-07-31
+
 ### Added
 
 - Add ``--variant`` keyword argument to all examples
-- CICD: Add Python workflow
+- Add ``camera_eye`` frame to the camera variant
 - Add an empty visual box to each virtual link
+- CICD: Add Python workflow
 
 ### Changed
 
@@ -17,6 +20,7 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - Rendering of the IMU frame orientation in MeshCat
+- Rendering of virtual-link frames in MeshCat
 
 ## [2.0.0] - 2024-07-25
 
@@ -137,7 +141,8 @@ Initial robot description.
 - Robot description (kinematics, inertias, collisions) in URDF
 - Scripts to compute box and cylinder inertias
 
-[unreleased]: https://github.com/upkie/upkie_description/compare/v2.0.0...HEAD
+[unreleased]: https://github.com/upkie/upkie_description/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/upkie/upkie_description/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/upkie/upkie_description/compare/v1.6.0...v2.0.0
 [1.6.0]: https://github.com/upkie/upkie_description/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/upkie/upkie_description/compare/v1.4.0...v1.5.0

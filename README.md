@@ -1,4 +1,4 @@
-# Upkie wheeled bipeds description
+# Upkie wheeled biped description
 
 <img src="https://user-images.githubusercontent.com/1189580/169594012-2d685579-2b66-4470-9def-57bd0656b420.png" align="right" width="300">
 
@@ -40,7 +40,7 @@ If you use this description in your works, please cite as follows:
 @software{upkie_description,
   author = {Caron, Stéphane and Tordjman--Levavasseur, Valentin},
   license = {Apache-2.0},
-  title = {{Upkie wheeled bipeds description}},
+  title = {{Upkie wheeled biped description}},
   url = {https://github.com/upkie/upkie_description},
   version = {2.1.0},
   year = {2024}
