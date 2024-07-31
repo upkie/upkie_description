@@ -1,4 +1,4 @@
-# Upkie wheeled biped robot
+# Upkie wheeled bipeds description
 
 <img src="https://user-images.githubusercontent.com/1189580/169594012-2d685579-2b66-4470-9def-57bd0656b420.png" align="right" width="300">
 
@@ -31,6 +31,21 @@ Check out the [Python readme](python/README.md) for more details.
 - [Upkie](https://github.com/upkie/upkie): main repository for the robot's hardware and software
 - [3D printed parts](https://github.com/upkie/parts): CAD files and add-ons for the robot
 - [xacrodoc](https://github.com/adamheins/xacrodoc): compile xacro files without ROS, helped this project a lot!
+
+## Citation
+
+If you use this description in your works, please cite as follows:
+
+```bibtex
+@software{upkie_description,
+  author = {Caron, Stéphane and Tordjman--Levavasseur, Valentin},
+  license = {Apache-2.0},
+  title = {{Upkie wheeled bipeds description}},
+  url = {https://github.com/upkie/upkie_description},
+  version = {2.1.0},
+  year = {2024}
+}
+```
 
 ## License
 
