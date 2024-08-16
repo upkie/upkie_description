@@ -8,6 +8,7 @@
 
 import argparse
 
+import pinocchio as pin
 import upkie_description
 
 if __name__ == "__main__":
@@ -22,6 +23,10 @@ if __name__ == "__main__":
     if args.variant:
         label = f"'{args.variant}' variant of the robot"
     print(f"Loading {label} in Pinocchio...")
-    robot = upkie_description.load_in_pinocchio(variant=args.variant)
+    robot = upkie_description.load_in_pinocchio(
+        # NB: we add a free-flyer so that the torso mass is included
+        root_joint=pin.JointModelFreeFlyer(),
+        variant=args.variant,
+    )
     print(f"{robot=}")
     print("Run this example with ``python -i`` to interact with it")

@@ -11,9 +11,8 @@ Display the robot description along and its collision meshes.
 import argparse
 import time
 
-from pinocchio.visualize import MeshcatVisualizer
-
 import upkie_description
+from pinocchio.visualize import MeshcatVisualizer
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
