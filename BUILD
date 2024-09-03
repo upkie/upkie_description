@@ -8,6 +8,6 @@ filegroup(
     name = "upkie_description",
     srcs = glob([
         "**/*.stl",
-        "urdf/upkie.urdf",
+        "urdf/*.urdf",
     ])
 )
