@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     robot.setVisualizer(MeshcatVisualizer())
     robot.initViewer(open=True)
-    robot.loadViewerModel(color=[1.0, 1.0, 1.0, 0.3])
+    robot.loadViewerModel(visual_color=[1.0, 1.0, 1.0, 0.3])
     robot.display(robot.q0)
     viewer = robot.viz.viewer
 

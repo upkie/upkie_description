@@ -19,10 +19,9 @@ import time
 
 import meshcat_shapes
 import numpy as np
+import upkie_description
 from meshcat import transformations
 from pinocchio.visualize import MeshcatVisualizer
-
-import upkie_description
 
 FRAME_SCALE = 1.0
 
@@ -45,7 +44,7 @@ if __name__ == "__main__":
     robot = upkie_description.load_in_pinocchio(variant=args.variant)
     robot.setVisualizer(MeshcatVisualizer())
     robot.initViewer(open=True)
-    robot.loadViewerModel(color=[1.0, 1.0, 1.0, 0.3])
+    robot.loadViewerModel(visual_color=[1.0, 1.0, 1.0, 0.3])
     robot.display(robot.q0)
     viewer = robot.viz.viewer
 
