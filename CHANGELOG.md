@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Bazel: Export all URDF variants in `upkie_description` filegroup
 
+### Fixed
+
+- Frame visualization example
+
 ## [2.1.0] - 2024-07-31
 
 ### Added
