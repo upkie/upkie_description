@@ -42,23 +42,24 @@ if __name__ == "__main__":
     viewer = robot.viz.viewer
     q = robot.q0.copy()
 
-    display_frames = set(["left_contact", "right_contact"])
-    left_wheel_jid = robot.model.getJointId("left_wheel")
-    left_wheel_joint = robot.model.joints[left_wheel_jid]
-    right_wheel_jid = robot.model.getJointId("right_wheel")
-    right_wheel_joint = robot.model.joints[right_wheel_jid]
-
-    dt = 0.01  # [s]
-    wheel_velocity = 1.0  # [rad] / [s]
-    for _ in range(1000):
-        robot.display(q)
-        pin.updateFramePlacements(robot.model, robot.data)
-        q[left_wheel_joint.idx_q] += wheel_velocity * dt
-        q[right_wheel_joint.idx_q] += wheel_velocity * dt
-        for frame in robot.model.frames:
-            if frame.name not in display_frames:
-                continue
-            handle = viewer["pinocchio"]["visuals"][f"{frame.name}_0"]
+    display_frames = set(
+        [
+            "left_anchor",
+            "left_contact",
+            "right_anchor",
+            "right_contact",
+        ]
+    )
+    frame_ids = [
+        frame_id
+        for frame_id, frame in enumerate(robot.model.frames)
+        if frame.name in display_frames
+    ]
+    robot.viz.displayFrames(True, frame_ids=frame_ids or None)
+    robot.viz.updateFrames()
+    for frame in robot.model.frames:
+        if frame.name in display_frames:
+            handle = viewer["pinocchio"]["frames"][frame.name]
             meshcat_shapes.frame(
                 handle["frame"],
                 axis_length=0.05 * FRAME_SCALE,
@@ -73,6 +74,35 @@ if __name__ == "__main__":
                 height=0.05,
                 font_size=100,
             )
+
+    left_wheel_jid = robot.model.getJointId("left_wheel")
+    left_wheel_joint = robot.model.joints[left_wheel_jid]
+    right_wheel_jid = robot.model.getJointId("right_wheel")
+    right_wheel_joint = robot.model.joints[right_wheel_jid]
+    names = [
+        f"{side}_{kind}"
+        for side in ["left", "right"]
+        for kind in ["hip", "knee"]
+    ]
+    upper_leg_joints = [
+        robot.model.joints[robot.model.getJointId(joint_name)]
+        for joint_name in names
+    ]
+
+    dt = 0.01  # [s]
+    wheel_velocity = 1.0  # [rad] / [s]
+    for i in range(1000):
+        robot.display(q)
+        pin.updateFramePlacements(robot.model, robot.data)
+        q[left_wheel_joint.idx_q] += wheel_velocity * dt
+        q[right_wheel_joint.idx_q] += wheel_velocity * dt
+        for joint in upper_leg_joints:
+            sign = +1 if i % 500 < 500 else -1
+            q[joint.idx_q] = sign * 0.5 * np.sin(i * dt)
+        for frame in robot.model.frames:
+            if frame.name not in display_frames:
+                continue
+            handle = viewer["pinocchio"]["frames"][frame.name]
             Rx = transformations.rotation_matrix(0.5 * np.pi, [1.0, 0.0, 0.0])
             Rz = transformations.rotation_matrix(0.5 * np.pi, [0.0, 0.0, 1.0])
             trans = transformations.translation_matrix(

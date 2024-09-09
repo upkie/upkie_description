@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Bazel: Export all URDF variants in `upkie_description` filegroup
+- Example to visualize wheel frames while both legs move around
 
 ### Fixed
 
