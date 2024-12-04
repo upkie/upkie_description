@@ -34,15 +34,15 @@ Check out the [Python readme](python/README.md) for more details.
 
 ## Citation
 
-If you use this description in your works, please cite as follows:
+If you use this description in your works, please cite the Upkie project and its contributors:
 
 ```bibtex
-@software{upkie_description,
-  author = {Caron, Stéphane and Tordjman--Levavasseur, Valentin},
+@software{upkie,
+  title = {{Upkie open source wheeled biped robot}},
+  author = {Caron, St\'{e}phane and Perrin-Gilbert, Nicolas and Ledoux, Viviane and G\"{o}kbakan, \"{Umit} Bora and Raverdy, Pierre-Guillaume and Raffin, Antonin and Tordjman--Levavasseur, Valentin},
+  url = {https://github.com/upkie/upkie},
   license = {Apache-2.0},
-  title = {{Upkie wheeled biped description}},
-  url = {https://github.com/upkie/upkie_description},
-  version = {2.1.0},
+  version = {6.0.0},
   year = {2024}
 }
 ```
