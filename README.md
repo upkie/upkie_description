@@ -29,7 +29,7 @@ Check out the [Python readme](python/README.md) for more details.
 ## See also
 
 - [Upkie](https://github.com/upkie/upkie): main repository for the robot's hardware and software
-- [3D printed parts](https://github.com/upkie/parts): CAD files and add-ons for the robot
+- [3D printed parts](https://github.com/upkie/upkie_parts): CAD files and add-ons for the robot
 - [xacrodoc](https://github.com/adamheins/xacrodoc): compile xacro files without ROS, helped this project a lot!
 
 ## Citation
