@@ -8,7 +8,7 @@ Copyright 2023 Inria
 This file was generated from `upkie.xacro`.
 
 Conventions in this file are detailed in:
-https://github.com/upkie/upkie_description/wiki/Model-conventions/
+https://upkie.github.io/upkie/kinematics.html#model-conventions
 
 -->
 <robot name="upkie">
@@ -40,7 +40,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions/
     <color rgba="0.93 0.64 0.52 0.8"/>
   </material>
   <link name="base">
-    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <!-- virtual link: https://upkie.github.io/upkie/kinematics.html#virtual-links -->
     <visual>
       <geometry>
         <box size="0 0 0"/>
@@ -78,7 +78,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions/
   </joint>
   <!-- IMU -->
   <link name="imu">
-    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <!-- virtual link: https://upkie.github.io/upkie/kinematics.html#virtual-links -->
     <visual>
       <geometry>
         <box size="0 0 0"/>
@@ -445,7 +445,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions/
     <origin rpy="3.141592653589793 0 0" xyz="0 0 -0.0015"/>
   </joint>
   <link name="left_anchor">
-    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <!-- virtual link: https://upkie.github.io/upkie/kinematics.html#virtual-links -->
     <visual>
       <geometry>
         <box size="0 0 0"/>
@@ -544,7 +544,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions/
     <origin rpy="0 0 0" xyz="0 0 0.0209"/>
   </joint>
   <link name="left_contact">
-    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <!-- virtual link: https://upkie.github.io/upkie/kinematics.html#virtual-links -->
     <visual>
       <geometry>
         <box size="0 0 0"/>
@@ -564,7 +564,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions/
     <origin rpy="1.5707963267948966 0 0" xyz="0 0.047 0"/>
   </joint>
   <link name="left_wheel_center">
-    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <!-- virtual link: https://upkie.github.io/upkie/kinematics.html#virtual-links -->
     <visual>
       <geometry>
         <box size="0 0 0"/>
@@ -881,7 +881,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions/
     <origin rpy="3.141592653589793 0 0" xyz="0 0 -0.0015"/>
   </joint>
   <link name="right_anchor">
-    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <!-- virtual link: https://upkie.github.io/upkie/kinematics.html#virtual-links -->
     <visual>
       <geometry>
         <box size="0 0 0"/>
@@ -980,7 +980,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions/
     <origin rpy="0 0 0" xyz="0 0 0.0209"/>
   </joint>
   <link name="right_contact">
-    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <!-- virtual link: https://upkie.github.io/upkie/kinematics.html#virtual-links -->
     <visual>
       <geometry>
         <box size="0 0 0"/>
@@ -1000,7 +1000,7 @@ https://github.com/upkie/upkie_description/wiki/Model-conventions/
     <origin rpy="1.5707963267948966 0 0" xyz="0 0.047 0"/>
   </joint>
   <link name="right_wheel_center">
-    <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+    <!-- virtual link: https://upkie.github.io/upkie/kinematics.html#virtual-links -->
     <visual>
       <geometry>
         <box size="0 0 0"/>

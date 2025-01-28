@@ -3,7 +3,7 @@
 <img src="https://user-images.githubusercontent.com/1189580/169594012-2d685579-2b66-4470-9def-57bd0656b420.png" align="right" width="300">
 
 [![Packaging](https://img.shields.io/github/actions/workflow/status/upkie/upkie_description/packaging.yml?branch=main)](https://github.com/upkie/upkie_description/actions)
-[![Documentation](https://img.shields.io/badge/docs-wiki-brightgreen?style=flat)](https://github.com/upkie/upkie_description/wiki)
+[![Documentation](https://img.shields.io/badge/docs-wiki-brightgreen?style=flat)](https://upkie.github.io/upkie/index.html)
 [![Conda version](https://img.shields.io/conda/vn/conda-forge/upkie_description.svg)](https://anaconda.org/conda-forge/upkie_description)
 [![PyPI version](https://img.shields.io/pypi/v/upkie_description)](https://pypi.org/project/upkie_description/)
 
@@ -13,6 +13,7 @@ The Upkie documentation also details properties of this model and how it was con
 
 - [Joint limits](https://upkie.github.io/upkie/kinematics.html#joint-limits)
 - [Location of the IMU](https://github.com/upkie/upkie_description/wiki/IMU-frame)
+- [Model conventions](https://upkie.github.io/upkie/kinematics.html#model-conventions)
 
 ## Python module
 

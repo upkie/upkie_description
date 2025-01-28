@@ -8,7 +8,7 @@ Copyright 2023 Inria
 This file was generated from `upkie.xacro`.
 
 Conventions in this file are detailed in:
-https://github.com/upkie/upkie_description/wiki/Model-conventions/
+https://upkie.github.io/upkie/kinematics.html#model-conventions
 
 -->
 <robot name="upkie" xmlns:xacro="http://ros.org/wiki/xacro">

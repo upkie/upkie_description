@@ -3,7 +3,7 @@
 <robot name="utils" xmlns:xacro="http://ros.org/wiki/xacro">
     <xacro:macro name="virtual_link" params="name">
         <link name="${name}">
-            <!-- virtual link: https://github.com/upkie/upkie_description/wiki/Model-conventions#virtual-links -->
+            <!-- virtual link: https://upkie.github.io/upkie/kinematics.html#virtual-links -->
             <visual>
                 <geometry>
                     <box size="0 0 0" />
