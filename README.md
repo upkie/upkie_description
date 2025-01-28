@@ -12,7 +12,7 @@ URDF descriptions for [Upkie](https://github.com/upkie/upkie) wheeled bipeds.
 The Upkie documentation also details properties of this model and how it was constructed:
 
 - [Joint limits](https://upkie.github.io/upkie/kinematics.html#joint-limits)
-- [Location of the IMU](https://github.com/upkie/upkie_description/wiki/IMU-frame)
+- [Location of IMU and anchor frames](https://upkie.github.io/upkie/kinematics.html#frames)
 - [Model conventions](https://upkie.github.io/upkie/kinematics.html#model-conventions)
 
 ## Python module
