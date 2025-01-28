@@ -9,6 +9,11 @@
 
 URDF descriptions for [Upkie](https://github.com/upkie/upkie) wheeled bipeds.
 
+The Upkie documentation also details properties of this model and how it was constructed:
+
+- [Joint limits](https://upkie.github.io/upkie/kinematics.html#joint-limits)
+- [Location of the IMU](https://github.com/upkie/upkie_description/wiki/IMU-frame)
+
 ## Python module
 
 The description can be loaded directly in various Python robotics frameworks, for instance:
@@ -20,17 +25,6 @@ robot = upkie_description.load_in_pinocchio()
 ```
 
 Check out the [Python readme](python/README.md) for more details.
-
-## Documentation
-
-- [Joint limits](https://github.com/upkie/upkie_description/wiki/Joint-limits)
-- [Location of the IMU](https://github.com/upkie/upkie_description/wiki/IMU-frame)
-
-## See also
-
-- [Upkie](https://github.com/upkie/upkie): main repository for the robot's hardware and software
-- [3D printed parts](https://github.com/upkie/upkie_parts): CAD files and add-ons for the robot
-- [xacrodoc](https://github.com/adamheins/xacrodoc): compile xacro files without ROS, helped this project a lot!
 
 ## Citation
 
@@ -50,3 +44,9 @@ If you use this description in your works, please cite the Upkie project and its
 ## License
 
 The Apache 2.0 license applies to all files in this repository, to the exception of the [wheel\_tire](meshes/wheel_tire) mesh which is under the CC BY 4.0 license. Meshes from [mjbots](meshes/mjbots), as well as the torso meshes derived from the [mjbots quad](https://github.com/mjbots/quad), are also Apache 2.0.
+
+## See also
+
+- [Upkie](https://github.com/upkie/upkie): main repository for the robot's hardware and software
+- [3D printed parts](https://github.com/upkie/upkie_parts): CAD files and add-ons for the robot
+- [xacrodoc](https://github.com/adamheins/xacrodoc): compile xacro files without ROS, helped this project a lot!
