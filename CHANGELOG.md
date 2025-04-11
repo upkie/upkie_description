@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- CICD: Update checkout action to v4
 - docs: Update documentation links
 - examples: Rename example to "show in neutral configuration"
 
