@@ -5,13 +5,11 @@
 # Copyright 2022 Stéphane Caron
 # Copyright 2024 Inria
 
-"""
-URDF description for the Upkie wheeled biped.
-"""
+"""URDF description for the Upkie wheeled biped."""
 
 from .paths import MESHES_PATH, PATH, URDF_PATH
 
-__version__ = "2.1.0"
+__version__ = "2.2.0"
 
 __all__ = [
     "MESHES_PATH",

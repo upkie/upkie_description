@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [2.2.0] - 2025-05-12
+
 ### Added
 
 - Bazel: Export all URDF variants in `upkie_description` filegroup
@@ -158,7 +160,8 @@ Initial robot description.
 - Robot description (kinematics, inertias, collisions) in URDF
 - Scripts to compute box and cylinder inertias
 
-[unreleased]: https://github.com/upkie/upkie_description/compare/v2.1.0...HEAD
+[unreleased]: https://github.com/upkie/upkie_description/compare/v2.2.0...HEAD
+[2.2.0]: https://github.com/upkie/upkie_description/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/upkie/upkie_description/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/upkie/upkie_description/compare/v1.6.0...v2.0.0
 [1.6.0]: https://github.com/upkie/upkie_description/compare/v1.5.0...v1.6.0

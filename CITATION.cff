@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this description, please cite it as below."
 title: "Upkie wheeled biped description"
-version: 2.1.0
-date-released: 2024-07-31
+version: 2.2.0
+date-released: 2025-05-12
 url: "https://github.com/upkie/upkie_description"
 license: "Apache-2.0"
 authors:
