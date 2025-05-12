@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Bazel: Export all URDF variants in `upkie_description` filegroup
+- examples: Display frame with an animation to see moving parts
 - examples: Show robot in a custom configuration
 - examples: Visualize wheel frames while both legs move around
 
