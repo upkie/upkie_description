@@ -4,9 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2024 Inria
 
-"""
-Display the robot description along and its collision meshes.
-"""
+"""Display the robot description along and its collision meshes."""
 
 import argparse
 import time

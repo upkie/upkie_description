@@ -4,8 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2023 Inria
 
-"""
-Display all frames from the robot description.
+"""Display all frames from the robot description.
 
 This example relies on the following dependencies:
 
