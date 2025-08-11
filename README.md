@@ -34,7 +34,7 @@ If you use this description in your works, please cite the Upkie project and its
 ```bibtex
 @software{upkie,
   title = {{Upkie open source wheeled biped robot}},
-  author = {Caron, St\'{e}phane and Perrin-Gilbert, Nicolas and Ledoux, Viviane and G\"{o}kbakan, \"{Umit} Bora and Raverdy, Pierre-Guillaume and Raffin, Antonin and Tordjman--Levavasseur, Valentin},
+  author = {Caron, St\'{e}phane and Perrin-Gilbert, Nicolas and Ledoux, Viviane and G\"{o}kbakan, \"{U}mit Bora and Raverdy, Pierre-Guillaume and Raffin, Antonin and Tordjman--Levavasseur, Valentin},
   url = {https://github.com/upkie/upkie},
   license = {Apache-2.0},
   version = {6.0.0},
