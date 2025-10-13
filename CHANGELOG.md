@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- examples: Add metadata to enable `uv run` on examples
+
 ## [2.2.0] - 2025-05-12
 
 ### Added

@@ -27,6 +27,14 @@ robot = upkie_description.load_in_pinocchio()
 
 Check out the [Python readme](python/README.md) for more details.
 
+## Examples
+
+You can run examples directly with [uv](https://docs.astral.sh/uv/), for instance:
+
+```console
+uv run examples/animate_frames.py
+```
+
 ## Citation
 
 If you use this description in your works, please cite the Upkie project and its contributors:
