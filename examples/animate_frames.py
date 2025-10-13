@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2025 Inria
+#
+# /// script
+# dependencies = ["meshcat_shapes", "pin", "upkie_description"]
+# ///
 
 """Display all frames from the robot description and make it move a bit.
 
@@ -14,9 +18,10 @@ import time
 
 import meshcat_shapes
 import numpy as np
-import upkie_description
 from meshcat import transformations
 from pinocchio.visualize import MeshcatVisualizer
+
+import upkie_description
 
 HIP_AMPLITUDE = 0.2  # animation parameter in rad
 KNEE_AMPLITUDE = 0.4  # animation parameter in rad
