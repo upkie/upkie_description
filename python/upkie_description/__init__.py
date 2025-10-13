@@ -23,3 +23,11 @@ try:
     __all__.append("load_in_pinocchio")
 except ImportError:
     pass
+
+
+try:
+    from .load_in_pybullet import load_in_pybullet  # noqa
+
+    __all__.append("load_in_pybullet")
+except ImportError:
+    pass

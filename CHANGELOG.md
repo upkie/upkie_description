@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Add `load_in_pybullet` function to load the description in PyBullet
 - examples: Add metadata to enable `uv run` on examples
 
 ## [2.2.0] - 2025-05-12
