@@ -5,7 +5,7 @@
 # Copyright 2022 Stéphane Caron
 # Copyright 2023 Inria
 
-"""Load Upkie's description in Pinocchio."""
+"""Load Upkie description in Pinocchio."""
 
 import os
 from typing import Optional, Union

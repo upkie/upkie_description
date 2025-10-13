@@ -3,12 +3,18 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2023 Inria
+#
+# /// script
+# dependencies = ["pin", "upkie_description", "ipython"]
+# ///
 
 """Load Upkie in Pinocchio."""
 
 import argparse
 
+import IPython
 import pinocchio as pin
+
 import upkie_description
 
 if __name__ == "__main__":
@@ -28,5 +34,8 @@ if __name__ == "__main__":
         root_joint=pin.JointModelFreeFlyer(),
         variant=args.variant,
     )
-    print(f"{robot=}")
-    print("Run this example with ``python -i`` to interact with it")
+    print(f"Robot description loaded to {robot=}\n")
+
+    # Make sure we have an interpreter
+    if IPython.get_ipython() is None:
+        IPython.embed()
