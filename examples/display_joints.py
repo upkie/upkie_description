@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2023 Inria
+#
+# /// script
+# dependencies = ["meshcat_shapes", "pin", "upkie_description"]
+# ///
 
 """Display joint frames from the robot description.
 
@@ -73,4 +77,10 @@ if __name__ == "__main__":
         )
         handle["text"].set_transform(trans @ Rz @ Rx)
 
-    time.sleep(1.0)  # avoid terminating too fast
+    print("Press Ctrl-C to exit.")
+    t = 0.0
+    dt = 1.0  # seconds
+    while True:
+        robot.display(robot.q0)
+        time.sleep(dt)
+        t += dt
