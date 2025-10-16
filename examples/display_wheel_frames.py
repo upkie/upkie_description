@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2023 Inria
+#
+# /// script
+# dependencies = ["meshcat_shapes", "pin", "upkie_description"]
+# ///
 
 """Display all frames from the robot description.
 
@@ -88,6 +92,7 @@ if __name__ == "__main__":
         for joint_name in names
     ]
 
+    print("Press Ctrl-C to exit.")
     dt = 0.01  # [s]
     wheel_velocity = 1.0  # [rad] / [s]
     for i in range(1000):
