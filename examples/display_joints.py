@@ -78,9 +78,7 @@ if __name__ == "__main__":
         handle["text"].set_transform(trans @ Rz @ Rx)
 
     print("Press Ctrl-C to exit.")
-    t = 0.0
     dt = 1.0  # seconds
     while True:
         robot.display(robot.q0)
         time.sleep(dt)
-        t += dt

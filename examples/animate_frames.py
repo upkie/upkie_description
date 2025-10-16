@@ -96,6 +96,7 @@ if __name__ == "__main__":
         )
         handle["text"].set_transform(trans @ Rz @ Rx)
 
+    print("Press Ctrl-C to exit.")
     t = 0.0  # seconds
     dt = 1e-2  # seconds
     q = robot.q0.copy()

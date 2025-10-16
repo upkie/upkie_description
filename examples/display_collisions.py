@@ -33,9 +33,7 @@ if __name__ == "__main__":
     robot.display(robot.q0)
 
     print("Press Ctrl-C to exit.")
-    t = 0.0
     dt = 1.0  # seconds
     while True:
         robot.display(robot.q0)
         time.sleep(dt)
-        t += dt

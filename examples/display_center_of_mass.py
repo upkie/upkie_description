@@ -46,9 +46,8 @@ if __name__ == "__main__":
     meshcat_shapes.point(viewer["com"], radius=0.05, color=0xFF0000)
     viewer["com"].set_transform(transformations.translation_matrix(com))
 
-    t = 0.0
+    print("Press Ctrl-C to exit.")
     dt = 1.0  # seconds
     while True:
         robot.display(robot.q0)
         time.sleep(dt)
-        t += dt
