@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2024 Inria
+#
+# /// script
+# dependencies = ["pin", "upkie_description"]
+# ///
 
 """Display the center of mass and visual model of the robot."""
 
@@ -10,8 +14,9 @@ import argparse
 import time
 
 import numpy as np
-import upkie_description
 from pinocchio.visualize import MeshcatVisualizer
+
+import upkie_description
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
@@ -31,4 +36,8 @@ if __name__ == "__main__":
     robot.loadViewerModel()
     robot.display(q)
 
-    time.sleep(10.0)  # avoid terminating too fast
+    print("Press Ctrl-C to exit.")
+    dt = 1.0  # seconds
+    while True:
+        robot.display(robot.q0)
+        time.sleep(dt)
