@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # Copyright 2024 Inria
+#
+# /// script
+# dependencies = ["meshcat", "pin", "upkie_description"]
+# ///
 
 """Load Upkie in Pinocchio and display its visual model in MeshCat."""
 
@@ -10,8 +14,9 @@ import argparse
 import time
 
 import pinocchio as pin
-import upkie_description
 from pinocchio.visualize import MeshcatVisualizer
+
+import upkie_description
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
@@ -34,4 +39,8 @@ if __name__ == "__main__":
     robot.loadViewerModel()
     robot.display(robot.q0)
 
-    time.sleep(1.0)  # wait long enough for MeshCat to fire up
+    print("Press Ctrl-C to exit.")
+    dt = 1.0  # seconds
+    while True:
+        robot.display(robot.q0)
+        time.sleep(dt)
