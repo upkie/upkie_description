@@ -45,8 +45,8 @@ If you use this description in your works, please cite the Upkie project and its
   author = {Caron, St\'{e}phane and Perrin-Gilbert, Nicolas and Ledoux, Viviane and G\"{o}kbakan, \"{U}mit Bora and Raverdy, Pierre-Guillaume and Raffin, Antonin and Tordjman--Levavasseur, Valentin},
   url = {https://github.com/upkie/upkie},
   license = {Apache-2.0},
-  version = {6.0.0},
-  year = {2024}
+  version = {10.0.0},
+  year = {2025}
 }
 ```
 
